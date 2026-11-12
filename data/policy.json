@@ -1,0 +1,13 @@
+{
+  "trainThrough": 6,
+  "asOf": 10,
+  "threshold": 0.8,
+  "poolBy": [
+    "region",
+    "service"
+  ],
+  "standardWeights": {
+    "north": 0.5,
+    "south": 0.5
+  }
+}
