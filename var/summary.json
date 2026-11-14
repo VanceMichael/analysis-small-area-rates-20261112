@@ -1,0 +1,20 @@
+{
+  "count": 150,
+  "groupBy": "service",
+  "groups": [
+    {
+      "count": 86,
+      "key": "card",
+      "reportedSuccess": 1564,
+      "sum": 2554
+    },
+    {
+      "count": 64,
+      "key": "language",
+      "reportedSuccess": 1692,
+      "sum": 2484
+    }
+  ],
+  "inputFingerprint": "96c7d5c89ebe1445aeb5a49067bec059873e510e7c42d160253af01f7a37a2ee",
+  "valueField": "attempts"
+}

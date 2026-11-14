@@ -1,0 +1,3504 @@
+{
+  "analysis": {
+    "configuration": {
+      "monteCarlo": {
+        "draws": 10000,
+        "rankedCount": 20,
+        "seed": 20261114
+      },
+      "poolBy": [
+        "region",
+        "service"
+      ],
+      "threshold": 0.8,
+      "trainingWindow": {
+        "from": 1,
+        "through": 6
+      }
+    },
+    "points": [
+      {
+        "attempts": 24,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p0",
+        "postTrainingAttempts": 6,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 10.293588584304542,
+          "beta": 18.146092196980046,
+          "credibleInterval": {
+            "lower": 0.19909439955472408,
+            "probability": 0.95,
+            "upper": 0.5431867593938478
+          },
+          "dataWeight": 0.8438913286183498,
+          "posteriorMean": 0.3619445894441433,
+          "posteriorStandardDeviation": 0.08856939825004746,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 0.9999997997389104,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 16,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            13,
+            18
+          ]
+        },
+        "rawRate": 0.3333333333333333,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 8,
+        "trainingAttempts": 18,
+        "trainingSuccess": 6
+      },
+      {
+        "attempts": 32,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p1",
+        "postTrainingAttempts": 8,
+        "postTrainingSuccess": 4,
+        "posterior": {
+          "alpha": 18.128067082280975,
+          "beta": 17.7145768735329,
+          "credibleInterval": {
+            "lower": 0.345028375502352,
+            "probability": 0.95,
+            "upper": 0.6658976027242716
+          },
+          "dataWeight": 0.8927912806725138,
+          "posteriorMean": 0.5057681320783397,
+          "posteriorStandardDeviation": 0.08236936325200186,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 0.9999519505145915,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 14,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            10,
+            16
+          ]
+        },
+        "rawRate": 0.5,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 16,
+        "trainingAttempts": 24,
+        "trainingSuccess": 12
+      },
+      {
+        "attempts": 104,
+        "dimensions": {
+          "region": "north",
+          "service": "language"
+        },
+        "layerKey": "north\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p10",
+        "postTrainingAttempts": 26,
+        "postTrainingSuccess": 22,
+        "posterior": {
+          "alpha": 91.52628426235734,
+          "beta": 18.176032001956898,
+          "credibleInterval": {
+            "lower": 0.7596035202855091,
+            "probability": 0.95,
+            "upper": 0.8975008656775572
+          },
+          "dataWeight": 0.9480200923873368,
+          "posteriorMean": 0.8343149659833619,
+          "posteriorStandardDeviation": 0.035336888302309605,
+          "priorConcentration": 5.702316264314225,
+          "priorMu": 0.6183950694606752,
+          "probabilityBelowThreshold": 0.16501889807586823,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 4,
+          "monteCarloStandardError": 0.0011066273085370702,
+          "probabilityBestInLayer": 0.8758,
+          "probabilityTop1": 0.0124,
+          "probabilityTop3": 0.4843,
+          "rankInterval95": [
+            2,
+            8
+          ]
+        },
+        "rawRate": 0.8461538461538461,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 88,
+        "trainingAttempts": 78,
+        "trainingSuccess": 66
+      },
+      {
+        "attempts": 112,
+        "dimensions": {
+          "region": "south",
+          "service": "language"
+        },
+        "layerKey": "south\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p11",
+        "postTrainingAttempts": 28,
+        "postTrainingSuccess": 24,
+        "posterior": {
+          "alpha": 99.49677820702465,
+          "beta": 17.949087765080264,
+          "credibleInterval": {
+            "lower": 0.7770768106870491,
+            "probability": 0.95,
+            "upper": 0.9060884720515787
+          },
+          "dataWeight": 0.9536308415197996,
+          "posteriorMean": 0.8471713958042301,
+          "posteriorStandardDeviation": 0.03306191548915722,
+          "priorConcentration": 5.445865972104915,
+          "priorMu": 0.6420977352244845,
+          "probabilityBelowThreshold": 0.0843999788551514,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 3,
+          "monteCarloStandardError": 0.001567321281677755,
+          "probabilityBestInLayer": 0.8519,
+          "probabilityTop1": 0.0252,
+          "probabilityTop3": 0.6526,
+          "rankInterval95": [
+            1,
+            7
+          ]
+        },
+        "rawRate": 0.8571428571428571,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 96,
+        "trainingAttempts": 84,
+        "trainingSuccess": 72
+      },
+      {
+        "attempts": 28,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p12",
+        "postTrainingAttempts": 8,
+        "postTrainingSuccess": 5,
+        "posterior": {
+          "alpha": 18.293588584304544,
+          "beta": 14.146092196980046,
+          "credibleInterval": {
+            "lower": 0.39330583257424223,
+            "probability": 0.95,
+            "upper": 0.7270746823328409
+          },
+          "dataWeight": 0.8631404294259895,
+          "posteriorMean": 0.563926282371393,
+          "posteriorStandardDeviation": 0.08575512070892087,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 0.9986724281296927,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 13,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0.003,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0.0001,
+          "rankInterval95": [
+            9,
+            15
+          ]
+        },
+        "rawRate": 0.5714285714285714,
+        "resetCount": 1,
+        "resetPeriods": [
+          5
+        ],
+        "status": "estimated",
+        "success": 16,
+        "trainingAttempts": 20,
+        "trainingSuccess": 11
+      },
+      {
+        "attempts": 5,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p13",
+        "postTrainingAttempts": 5,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 4.128067082280973,
+          "beta": 4.714576873532899,
+          "credibleInterval": {
+            "lower": 0.17136298255945803,
+            "probability": 0.95,
+            "upper": 0.77644283433483
+          },
+          "dataWeight": 0.5654417417442884,
+          "posteriorMean": 0.4668362882084432,
+          "posteriorStandardDeviation": 0.1590218155094725,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 0.9841006269092537,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 15,
+          "monteCarloStandardError": 0.00014140721339450828,
+          "probabilityBestInLayer": 0.0002,
+          "probabilityTop1": 0.0002,
+          "probabilityTop3": 0.0055,
+          "rankInterval95": [
+            7,
+            18
+          ]
+        },
+        "rawRate": 0.4,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 2,
+        "trainingAttempts": 0,
+        "trainingSuccess": 0
+      },
+      {
+        "attempts": 100,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          7,
+          8
+        ],
+        "point": "p14",
+        "postTrainingAttempts": 100,
+        "postTrainingSuccess": 94,
+        "posterior": {
+          "alpha": 96.12806708228098,
+          "beta": 7.714576873532906,
+          "credibleInterval": {
+            "lower": 0.8683348352301437,
+            "probability": 0.95,
+            "upper": 0.967665309556196
+          },
+          "dataWeight": 0.9629955111943321,
+          "posteriorMean": 0.9257089710002421,
+          "posteriorStandardDeviation": 0.025611584100978683,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 0.0001247897301001062,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 1,
+          "monteCarloStandardError": 0.002474060427717965,
+          "probabilityBestInLayer": 0.9866,
+          "probabilityTop1": 0.9345,
+          "probabilityTop3": 0.9972,
+          "rankInterval95": [
+            1,
+            2
+          ]
+        },
+        "rawRate": 0.94,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 94,
+        "trainingAttempts": 0,
+        "trainingSuccess": 0
+      },
+      {
+        "attempts": 64,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p15",
+        "postTrainingAttempts": 16,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 10.293588584304542,
+          "beta": 58.14609219698005,
+          "credibleInterval": {
+            "lower": 0.0766295959369927,
+            "probability": 0.95,
+            "upper": 0.24346030137849084
+          },
+          "dataWeight": 0.9351300191555151,
+          "posteriorMean": 0.15040380765655778,
+          "posteriorStandardDeviation": 0.042897485525961974,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 1,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 19,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            17,
+            20
+          ]
+        },
+        "rawRate": 0.125,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 8,
+        "trainingAttempts": 48,
+        "trainingSuccess": 6
+      },
+      {
+        "attempts": 16,
+        "dimensions": {
+          "region": "east",
+          "service": "card"
+        },
+        "layerKey": "east\u0001card",
+        "note": "该层训练窗口无数据，未借用全局或其他层先验",
+        "periods": [
+          7,
+          8
+        ],
+        "point": "p16",
+        "postTrainingAttempts": 16,
+        "postTrainingSuccess": 10,
+        "posterior": null,
+        "rawRate": 0.625,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "excluded_layer_without_prior",
+        "success": 10,
+        "trainingAttempts": 0,
+        "trainingSuccess": 0
+      },
+      {
+        "attempts": 4,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          7,
+          8
+        ],
+        "point": "p17",
+        "postTrainingAttempts": 4,
+        "postTrainingSuccess": 3,
+        "posterior": {
+          "alpha": 5.293588584304542,
+          "beta": 3.1460921969800477,
+          "credibleInterval": {
+            "lower": 0.3005929386695243,
+            "probability": 0.95,
+            "upper": 0.8972836128846211
+          },
+          "dataWeight": 0.4739515751437185,
+          "posteriorMean": 0.6272261619234861,
+          "posteriorStandardDeviation": 0.15738239169644505,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 0.8562411166133188,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 11,
+          "monteCarloStandardError": 0.0011370307823449636,
+          "probabilityBestInLayer": 0.1381,
+          "probabilityTop1": 0.0131,
+          "probabilityTop3": 0.0746,
+          "rankInterval95": [
+            2,
+            16
+          ]
+        },
+        "rawRate": 0.75,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 3,
+        "trainingAttempts": 0,
+        "trainingSuccess": 0
+      },
+      {
+        "attempts": 48,
+        "dimensions": {
+          "region": "north",
+          "service": "language"
+        },
+        "layerKey": "north\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p18",
+        "postTrainingAttempts": 12,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 11.526284262357333,
+          "beta": 42.17603200195689,
+          "credibleInterval": {
+            "lower": 0.11665051190766462,
+            "probability": 0.95,
+            "upper": 0.3327073219866179
+          },
+          "dataWeight": 0.8938161952596544,
+          "posteriorMean": 0.21463290718461384,
+          "posteriorStandardDeviation": 0.055511331707315224,
+          "priorConcentration": 5.702316264314225,
+          "priorMu": 0.6183950694606752,
+          "probabilityBelowThreshold": 1,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 18,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            16,
+            20
+          ]
+        },
+        "rawRate": 0.16666666666666666,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 8,
+        "trainingAttempts": 36,
+        "trainingSuccess": 6
+      },
+      {
+        "attempts": 48,
+        "dimensions": {
+          "region": "south",
+          "service": "language"
+        },
+        "layerKey": "south\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p19",
+        "postTrainingAttempts": 12,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 11.496778207024652,
+          "beta": 41.949087765080264,
+          "credibleInterval": {
+            "lower": 0.11682013806102987,
+            "probability": 0.95,
+            "upper": 0.33355594927297716
+          },
+          "dataWeight": 0.898105010124688,
+          "posteriorMean": 0.21511071058377432,
+          "posteriorStandardDeviation": 0.05568686433658411,
+          "priorConcentration": 5.445865972104915,
+          "priorMu": 0.6420977352244845,
+          "probabilityBelowThreshold": 1,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 18,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            16,
+            20
+          ]
+        },
+        "rawRate": 0.16666666666666666,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 8,
+        "trainingAttempts": 36,
+        "trainingSuccess": 6
+      },
+      {
+        "attempts": 40,
+        "dimensions": {
+          "region": "north",
+          "service": "language"
+        },
+        "layerKey": "north\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p2",
+        "postTrainingAttempts": 10,
+        "postTrainingSuccess": 6,
+        "posterior": {
+          "alpha": 27.526284262357333,
+          "beta": 18.17603200195689,
+          "credibleInterval": {
+            "lower": 0.4584086615745946,
+            "probability": 0.95,
+            "upper": 0.7376967680843336
+          },
+          "dataWeight": 0.8752291627554385,
+          "posteriorMean": 0.6022951682177804,
+          "posteriorStandardDeviation": 0.0716169650901668,
+          "priorConcentration": 5.702316264314225,
+          "priorMu": 0.6183950694606752,
+          "probabilityBelowThreshold": 0.9987460167240247,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 12,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0.0006,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0.0002,
+          "rankInterval95": [
+            8,
+            15
+          ]
+        },
+        "rawRate": 0.6,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 24,
+        "trainingAttempts": 30,
+        "trainingSuccess": 18
+      },
+      {
+        "attempts": 64,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p20",
+        "postTrainingAttempts": 16,
+        "postTrainingSuccess": 2,
+        "posterior": {
+          "alpha": 10.128067082280973,
+          "beta": 57.714576873532906,
+          "credibleInterval": {
+            "lower": 0.07553481771401493,
+            "probability": 0.95,
+            "upper": 0.24255270463572742
+          },
+          "dataWeight": 0.9433594604845207,
+          "posteriorMean": 0.1492876234139314,
+          "posteriorStandardDeviation": 0.042951121386264786,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 1,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 19,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0,
+          "rankInterval95": [
+            17,
+            20
+          ]
+        },
+        "rawRate": 0.125,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 8,
+        "trainingAttempts": 48,
+        "trainingSuccess": 6
+      },
+      {
+        "attempts": 48,
+        "dimensions": {
+          "region": "south",
+          "service": "language"
+        },
+        "layerKey": "south\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p3",
+        "postTrainingAttempts": 12,
+        "postTrainingSuccess": 8,
+        "posterior": {
+          "alpha": 35.496778207024654,
+          "beta": 17.949087765080264,
+          "credibleInterval": {
+            "lower": 0.5335051538363587,
+            "probability": 0.95,
+            "upper": 0.7831830584514137
+          },
+          "dataWeight": 0.898105010124688,
+          "posteriorMean": 0.6641632156461182,
+          "posteriorStandardDeviation": 0.06400576401058068,
+          "priorConcentration": 5.445865972104915,
+          "priorMu": 0.6420977352244845,
+          "probabilityBelowThreshold": 0.9886936430593317,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 10,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0.0027,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0.0011,
+          "rankInterval95": [
+            6,
+            14
+          ]
+        },
+        "rawRate": 0.6666666666666666,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 32,
+        "trainingAttempts": 36,
+        "trainingSuccess": 24
+      },
+      {
+        "attempts": 56,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p4",
+        "postTrainingAttempts": 14,
+        "postTrainingSuccess": 10,
+        "posterior": {
+          "alpha": 42.293588584304544,
+          "beta": 18.14609219698005,
+          "credibleInterval": {
+            "lower": 0.5794291423449067,
+            "probability": 0.95,
+            "upper": 0.8075820449898856
+          },
+          "dataWeight": 0.9265436096965727,
+          "posteriorMean": 0.6997652541772017,
+          "posteriorStandardDeviation": 0.058476609962455205,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 0.9643682167303973,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 9,
+          "monteCarloStandardError": 0,
+          "probabilityBestInLayer": 0.0614,
+          "probabilityTop1": 0,
+          "probabilityTop3": 0.0056,
+          "rankInterval95": [
+            5,
+            13
+          ]
+        },
+        "rawRate": 0.7142857142857143,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 40,
+        "trainingAttempts": 42,
+        "trainingSuccess": 30
+      },
+      {
+        "attempts": 64,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p5",
+        "postTrainingAttempts": 16,
+        "postTrainingSuccess": 12,
+        "posterior": {
+          "alpha": 50.12806708228097,
+          "beta": 17.714576873532906,
+          "credibleInterval": {
+            "lower": 0.6289490605790888,
+            "probability": 0.95,
+            "upper": 0.8354936971732059
+          },
+          "dataWeight": 0.9433594604845207,
+          "posteriorMean": 0.7388872862167567,
+          "posteriorStandardDeviation": 0.052938829602012585,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 0.8784532872415514,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 8,
+          "monteCarloStandardError": 0.00009999499987499375,
+          "probabilityBestInLayer": 0.0004,
+          "probabilityTop1": 0.0001,
+          "probabilityTop3": 0.0229,
+          "rankInterval95": [
+            4,
+            12
+          ]
+        },
+        "rawRate": 0.75,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 48,
+        "trainingAttempts": 48,
+        "trainingSuccess": 36
+      },
+      {
+        "attempts": 72,
+        "dimensions": {
+          "region": "north",
+          "service": "language"
+        },
+        "layerKey": "north\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p6",
+        "postTrainingAttempts": 18,
+        "postTrainingSuccess": 14,
+        "posterior": {
+          "alpha": 59.526284262357336,
+          "beta": 18.176032001956898,
+          "credibleInterval": {
+            "lower": 0.6664985732800233,
+            "probability": 0.95,
+            "upper": 0.8527022444000067
+          },
+          "dataWeight": 0.9266133039725988,
+          "posteriorMean": 0.7660812074104866,
+          "posteriorStandardDeviation": 0.047717337606319396,
+          "priorConcentration": 5.702316264314225,
+          "priorMu": 0.6183950694606752,
+          "probabilityBelowThreshold": 0.7525133173347298,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 7,
+          "monteCarloStandardError": 0.00014140721339450828,
+          "probabilityBestInLayer": 0.1236,
+          "probabilityTop1": 0.0002,
+          "probabilityTop3": 0.0546,
+          "rankInterval95": [
+            3,
+            11
+          ]
+        },
+        "rawRate": 0.7777777777777778,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 56,
+        "trainingAttempts": 54,
+        "trainingSuccess": 42
+      },
+      {
+        "attempts": 80,
+        "dimensions": {
+          "region": "south",
+          "service": "language"
+        },
+        "layerKey": "south\u0001language",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p7",
+        "postTrainingAttempts": 20,
+        "postTrainingSuccess": 16,
+        "posterior": {
+          "alpha": 67.49677820702465,
+          "beta": 17.949087765080264,
+          "credibleInterval": {
+            "lower": 0.6980355921091359,
+            "probability": 0.95,
+            "upper": 0.8689968057574333
+          },
+          "dataWeight": 0.9362653077460436,
+          "posteriorMean": 0.7899361477483298,
+          "posteriorStandardDeviation": 0.04381265200111443,
+          "priorConcentration": 5.445865972104915,
+          "priorMu": 0.6420977352244845,
+          "probabilityBelowThreshold": 0.5709787574167131,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 6,
+          "monteCarloStandardError": 0.0004238820590683215,
+          "probabilityBestInLayer": 0.1454,
+          "probabilityTop1": 0.0018,
+          "probabilityTop3": 0.1294,
+          "rankInterval95": [
+            2,
+            10
+          ]
+        },
+        "rawRate": 0.8,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 64,
+        "trainingAttempts": 60,
+        "trainingSuccess": 48
+      },
+      {
+        "attempts": 88,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "layerKey": "north\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p8",
+        "postTrainingAttempts": 22,
+        "postTrainingSuccess": 18,
+        "posterior": {
+          "alpha": 74.29358858430454,
+          "beta": 18.14609219698005,
+          "credibleInterval": {
+            "lower": 0.7173085529880154,
+            "probability": 0.95,
+            "upper": 0.877657559441559
+          },
+          "dataWeight": 0.9519721320566973,
+          "posteriorMean": 0.803698021849358,
+          "posteriorStandardDeviation": 0.041090659782394345,
+          "priorConcentration": 4.43968078128459,
+          "priorMu": 0.5166111478043944,
+          "probabilityBelowThreshold": 0.4435700911411987,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 5,
+          "monteCarloStandardError": 0.0005821030836544331,
+          "probabilityBestInLayer": 0.7975,
+          "probabilityTop1": 0.0034,
+          "probabilityTop3": 0.2108,
+          "rankInterval95": [
+            2,
+            9
+          ]
+        },
+        "rawRate": 0.8181818181818182,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 72,
+        "trainingAttempts": 66,
+        "trainingSuccess": 54
+      },
+      {
+        "attempts": 96,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "layerKey": "south\u0001card",
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "point": "p9",
+        "postTrainingAttempts": 24,
+        "postTrainingSuccess": 20,
+        "posterior": {
+          "alpha": 82.12806708228098,
+          "beta": 17.714576873532906,
+          "credibleInterval": {
+            "lower": 0.7422449928658352,
+            "probability": 0.95,
+            "upper": 0.8906848407036705
+          },
+          "dataWeight": 0.9615129988192774,
+          "posteriorMean": 0.8225750423699454,
+          "posteriorStandardDeviation": 0.03804284672266899,
+          "priorConcentration": 3.842643955813872,
+          "priorMu": 0.5538028260623091,
+          "probabilityBelowThreshold": 0.26535780398473446,
+          "zeroAttempts": false
+        },
+        "ranking": {
+          "medianRank": 4,
+          "monteCarloStandardError": 0.0009495888584013611,
+          "probabilityBestInLayer": 0.0128,
+          "probabilityTop1": 0.0091,
+          "probabilityTop3": 0.3611,
+          "rankInterval95": [
+            2,
+            8
+          ]
+        },
+        "rawRate": 0.8333333333333334,
+        "resetCount": 0,
+        "resetPeriods": [],
+        "status": "estimated",
+        "success": 80,
+        "trainingAttempts": 72,
+        "trainingSuccess": 60
+      }
+    ],
+    "standardization": [
+      {
+        "crudePooledRate": 0.632,
+        "includedWeight": 1,
+        "layers": [
+          {
+            "attempts": 264,
+            "included": true,
+            "layerPosteriorMean": 0.5561532041380418,
+            "layerRawRate": 0.5568181818181818,
+            "region": "north",
+            "success": 147,
+            "weight": 0.5
+          },
+          {
+            "attempts": 361,
+            "included": true,
+            "layerPosteriorMean": 0.6855779367517522,
+            "layerRawRate": 0.6869806094182825,
+            "region": "south",
+            "success": 248,
+            "weight": 0.5
+          }
+        ],
+        "service": "card",
+        "standardizedRate": 0.620865570444897,
+        "standardizedRawRate": 0.6218993956182322,
+        "whyNotOverallRate": "标准化率按固定业务结构（standardWeights）对各层后验均值加权，回答“结构不变时服务表现如何”；总体率是全部成功数除以全部尝试次数，混合了各层交易量结构，会被大层和交易量波动主导，两者不是同一估计目标。"
+      },
+      {
+        "crudePooledRate": 0.6811594202898551,
+        "includedWeight": 1,
+        "layers": [
+          {
+            "attempts": 264,
+            "included": true,
+            "layerPosteriorMean": 0.6656460602526586,
+            "layerRawRate": 0.6666666666666666,
+            "region": "north",
+            "success": 176,
+            "weight": 0.5
+          },
+          {
+            "attempts": 288,
+            "included": true,
+            "layerPosteriorMean": 0.693472976805777,
+            "layerRawRate": 0.6944444444444444,
+            "region": "south",
+            "success": 200,
+            "weight": 0.5
+          }
+        ],
+        "service": "language",
+        "standardizedRate": 0.6795595185292178,
+        "standardizedRawRate": 0.6805555555555556,
+        "whyNotOverallRate": "标准化率按固定业务结构（standardWeights）对各层后验均值加权，回答“结构不变时服务表现如何”；总体率是全部成功数除以全部尝试次数，混合了各层交易量结构，会被大层和交易量波动主导，两者不是同一估计目标。"
+      }
+    ]
+  },
+  "asOf": 10,
+  "inputFingerprint": "96c7d5c89ebe1445aeb5a49067bec059873e510e7c42d160253af01f7a37a2ee",
+  "ledger": {
+    "futureRecordIds": [
+      "r0149"
+    ],
+    "increments": [
+      {
+        "asOf": 2,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 4,
+        "cumulativeSuccess": 2,
+        "period": 1,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 2,
+        "service": "card",
+        "sourceId": "r0096",
+        "successDelta": 2
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 2,
+        "cumulativeAttempts": 6,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0012",
+        "successDelta": 0
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 9,
+        "cumulativeSuccess": 3,
+        "period": 3,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0024",
+        "successDelta": 1
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 4,
+        "period": 4,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0036",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 15,
+        "cumulativeSuccess": 5,
+        "period": 5,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0048",
+        "successDelta": 1
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 18,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0060",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 21,
+        "cumulativeSuccess": 7,
+        "period": 7,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0072",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 8,
+        "period": 8,
+        "point": "p0",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0084",
+        "successDelta": 1
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 4,
+        "cumulativeSuccess": 2,
+        "period": 1,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0001",
+        "successDelta": 2
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 4,
+        "period": 2,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0013",
+        "successDelta": 2
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 6,
+        "period": 3,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0025",
+        "successDelta": 2
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 16,
+        "cumulativeSuccess": 8,
+        "period": 4,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0037",
+        "successDelta": 2
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 20,
+        "cumulativeSuccess": 10,
+        "period": 5,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0049",
+        "successDelta": 2
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 12,
+        "period": 6,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0061",
+        "successDelta": 2
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 28,
+        "cumulativeSuccess": 14,
+        "period": 7,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0073",
+        "successDelta": 2
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 32,
+        "cumulativeSuccess": 16,
+        "period": 8,
+        "point": "p1",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0085",
+        "successDelta": 2
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 13,
+        "cumulativeSuccess": 11,
+        "period": 1,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0010",
+        "successDelta": 11
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 26,
+        "cumulativeSuccess": 22,
+        "period": 2,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0022",
+        "successDelta": 11
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 39,
+        "cumulativeSuccess": 33,
+        "period": 3,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0034",
+        "successDelta": 11
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 52,
+        "cumulativeSuccess": 44,
+        "period": 4,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0046",
+        "successDelta": 11
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 65,
+        "cumulativeSuccess": 55,
+        "period": 5,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0058",
+        "successDelta": 11
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 78,
+        "cumulativeSuccess": 66,
+        "period": 6,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0070",
+        "successDelta": 11
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 91,
+        "cumulativeSuccess": 77,
+        "period": 7,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0082",
+        "successDelta": 11
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 13,
+        "cumulativeAttempts": 104,
+        "cumulativeSuccess": 88,
+        "period": 8,
+        "point": "p10",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0094",
+        "successDelta": 11
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 14,
+        "cumulativeSuccess": 12,
+        "period": 1,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0011",
+        "successDelta": 12
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 28,
+        "cumulativeSuccess": 24,
+        "period": 2,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0023",
+        "successDelta": 12
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 42,
+        "cumulativeSuccess": 36,
+        "period": 3,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0035",
+        "successDelta": 12
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 56,
+        "cumulativeSuccess": 48,
+        "period": 4,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0047",
+        "successDelta": 12
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 70,
+        "cumulativeSuccess": 60,
+        "period": 5,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0059",
+        "successDelta": 12
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 84,
+        "cumulativeSuccess": 72,
+        "period": 6,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0071",
+        "successDelta": 12
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 98,
+        "cumulativeSuccess": 84,
+        "period": 7,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0083",
+        "successDelta": 12
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 14,
+        "cumulativeAttempts": 112,
+        "cumulativeSuccess": 96,
+        "period": 8,
+        "point": "p11",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0095",
+        "successDelta": 12
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 4,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0097",
+        "successDelta": 2
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 4,
+        "period": 3,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0098",
+        "successDelta": 2
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 11,
+        "cumulativeSuccess": 5,
+        "period": 4,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0099",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 5,
+        "cumulativeSuccess": 3,
+        "period": 5,
+        "point": "p12",
+        "region": "north",
+        "reset": true,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0100",
+        "successDelta": 3
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 9,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0101",
+        "successDelta": 3
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 13,
+        "cumulativeSuccess": 9,
+        "period": 7,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0102",
+        "successDelta": 3
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 4,
+        "cumulativeAttempts": 17,
+        "cumulativeSuccess": 11,
+        "period": 8,
+        "point": "p12",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0103",
+        "successDelta": 2
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 0,
+        "cumulativeAttempts": 0,
+        "cumulativeSuccess": 0,
+        "period": 2,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0104",
+        "successDelta": 0
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 0,
+        "cumulativeAttempts": 0,
+        "cumulativeSuccess": 0,
+        "period": 3,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0105",
+        "successDelta": 0
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 0,
+        "cumulativeAttempts": 0,
+        "cumulativeSuccess": 0,
+        "period": 4,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0106",
+        "successDelta": 0
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 0,
+        "cumulativeAttempts": 0,
+        "cumulativeSuccess": 0,
+        "period": 5,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0107",
+        "successDelta": 0
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 0,
+        "cumulativeAttempts": 0,
+        "cumulativeSuccess": 0,
+        "period": 6,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0108",
+        "successDelta": 0
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 2,
+        "cumulativeAttempts": 2,
+        "cumulativeSuccess": 1,
+        "period": 7,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0109",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 3,
+        "cumulativeAttempts": 5,
+        "cumulativeSuccess": 2,
+        "period": 8,
+        "point": "p13",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0110",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 50,
+        "cumulativeAttempts": 50,
+        "cumulativeSuccess": 46,
+        "period": 7,
+        "point": "p14",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0111",
+        "successDelta": 46
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 50,
+        "cumulativeAttempts": 100,
+        "cumulativeSuccess": 94,
+        "period": 8,
+        "point": "p14",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0112",
+        "successDelta": 48
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 1,
+        "period": 1,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0113",
+        "successDelta": 1
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 16,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0114",
+        "successDelta": 1
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 3,
+        "period": 3,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0115",
+        "successDelta": 1
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 32,
+        "cumulativeSuccess": 4,
+        "period": 4,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0116",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 40,
+        "cumulativeSuccess": 5,
+        "period": 5,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0117",
+        "successDelta": 1
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0118",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 56,
+        "cumulativeSuccess": 7,
+        "period": 7,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0119",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 64,
+        "cumulativeSuccess": 8,
+        "period": 8,
+        "point": "p15",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0120",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 5,
+        "period": 7,
+        "point": "p16",
+        "region": "east",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0121",
+        "successDelta": 5
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 16,
+        "cumulativeSuccess": 10,
+        "period": 8,
+        "point": "p16",
+        "region": "east",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0122",
+        "successDelta": 5
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 2,
+        "cumulativeAttempts": 2,
+        "cumulativeSuccess": 2,
+        "period": 7,
+        "point": "p17",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0123",
+        "successDelta": 2
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 2,
+        "cumulativeAttempts": 4,
+        "cumulativeSuccess": 3,
+        "period": 8,
+        "point": "p17",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0124",
+        "successDelta": 1
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 6,
+        "cumulativeSuccess": 1,
+        "period": 1,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0125",
+        "successDelta": 1
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0126",
+        "successDelta": 1
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 18,
+        "cumulativeSuccess": 3,
+        "period": 3,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0127",
+        "successDelta": 1
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 4,
+        "period": 4,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0128",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 30,
+        "cumulativeSuccess": 5,
+        "period": 5,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0129",
+        "successDelta": 1
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 36,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0130",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 42,
+        "cumulativeSuccess": 7,
+        "period": 7,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0131",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 8,
+        "period": 8,
+        "point": "p18",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0132",
+        "successDelta": 1
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 6,
+        "cumulativeSuccess": 1,
+        "period": 1,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0133",
+        "successDelta": 1
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0134",
+        "successDelta": 1
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 18,
+        "cumulativeSuccess": 3,
+        "period": 3,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0135",
+        "successDelta": 1
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 4,
+        "period": 4,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0136",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 30,
+        "cumulativeSuccess": 5,
+        "period": 5,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0137",
+        "successDelta": 1
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 36,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0138",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 42,
+        "cumulativeSuccess": 7,
+        "period": 7,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0139",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 8,
+        "period": 8,
+        "point": "p19",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0140",
+        "successDelta": 1
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 5,
+        "cumulativeSuccess": 3,
+        "period": 1,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0002",
+        "successDelta": 3
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 10,
+        "cumulativeSuccess": 6,
+        "period": 2,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0014",
+        "successDelta": 3
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 15,
+        "cumulativeSuccess": 9,
+        "period": 3,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0026",
+        "successDelta": 3
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 20,
+        "cumulativeSuccess": 12,
+        "period": 4,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0038",
+        "successDelta": 3
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 25,
+        "cumulativeSuccess": 15,
+        "period": 5,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0050",
+        "successDelta": 3
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 30,
+        "cumulativeSuccess": 18,
+        "period": 6,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0062",
+        "successDelta": 3
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 35,
+        "cumulativeSuccess": 21,
+        "period": 7,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0074",
+        "successDelta": 3
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 5,
+        "cumulativeAttempts": 40,
+        "cumulativeSuccess": 24,
+        "period": 8,
+        "point": "p2",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0086",
+        "successDelta": 3
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 1,
+        "period": 1,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0141",
+        "successDelta": 1
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 16,
+        "cumulativeSuccess": 2,
+        "period": 2,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0142",
+        "successDelta": 1
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 3,
+        "period": 3,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0143",
+        "successDelta": 1
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 32,
+        "cumulativeSuccess": 4,
+        "period": 4,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0144",
+        "successDelta": 1
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 40,
+        "cumulativeSuccess": 5,
+        "period": 5,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0145",
+        "successDelta": 1
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 6,
+        "period": 6,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0146",
+        "successDelta": 1
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 56,
+        "cumulativeSuccess": 7,
+        "period": 7,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0147",
+        "successDelta": 1
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 64,
+        "cumulativeSuccess": 8,
+        "period": 8,
+        "point": "p20",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0148",
+        "successDelta": 1
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 6,
+        "cumulativeSuccess": 4,
+        "period": 1,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0003",
+        "successDelta": 4
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 8,
+        "period": 2,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0015",
+        "successDelta": 4
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 18,
+        "cumulativeSuccess": 12,
+        "period": 3,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0027",
+        "successDelta": 4
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 16,
+        "period": 4,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0039",
+        "successDelta": 4
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 30,
+        "cumulativeSuccess": 20,
+        "period": 5,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0051",
+        "successDelta": 4
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 36,
+        "cumulativeSuccess": 24,
+        "period": 6,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0063",
+        "successDelta": 4
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 42,
+        "cumulativeSuccess": 28,
+        "period": 7,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0075",
+        "successDelta": 4
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 6,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 32,
+        "period": 8,
+        "point": "p3",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0087",
+        "successDelta": 4
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 7,
+        "cumulativeSuccess": 5,
+        "period": 1,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0004",
+        "successDelta": 5
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 14,
+        "cumulativeSuccess": 10,
+        "period": 2,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0016",
+        "successDelta": 5
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 21,
+        "cumulativeSuccess": 15,
+        "period": 3,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0028",
+        "successDelta": 5
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 28,
+        "cumulativeSuccess": 20,
+        "period": 4,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0040",
+        "successDelta": 5
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 35,
+        "cumulativeSuccess": 25,
+        "period": 5,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0052",
+        "successDelta": 5
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 42,
+        "cumulativeSuccess": 30,
+        "period": 6,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0064",
+        "successDelta": 5
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 49,
+        "cumulativeSuccess": 35,
+        "period": 7,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0076",
+        "successDelta": 5
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 7,
+        "cumulativeAttempts": 56,
+        "cumulativeSuccess": 40,
+        "period": 8,
+        "point": "p4",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0088",
+        "successDelta": 5
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 8,
+        "cumulativeSuccess": 6,
+        "period": 1,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0005",
+        "successDelta": 6
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 16,
+        "cumulativeSuccess": 12,
+        "period": 2,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0017",
+        "successDelta": 6
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 18,
+        "period": 3,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0029",
+        "successDelta": 6
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 32,
+        "cumulativeSuccess": 24,
+        "period": 4,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0041",
+        "successDelta": 6
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 40,
+        "cumulativeSuccess": 30,
+        "period": 5,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0053",
+        "successDelta": 6
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 36,
+        "period": 6,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0065",
+        "successDelta": 6
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 56,
+        "cumulativeSuccess": 42,
+        "period": 7,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0077",
+        "successDelta": 6
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 8,
+        "cumulativeAttempts": 64,
+        "cumulativeSuccess": 48,
+        "period": 8,
+        "point": "p5",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0089",
+        "successDelta": 6
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 9,
+        "cumulativeSuccess": 7,
+        "period": 1,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0006",
+        "successDelta": 7
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 18,
+        "cumulativeSuccess": 14,
+        "period": 2,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0018",
+        "successDelta": 7
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 27,
+        "cumulativeSuccess": 21,
+        "period": 3,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0030",
+        "successDelta": 7
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 36,
+        "cumulativeSuccess": 28,
+        "period": 4,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0042",
+        "successDelta": 7
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 45,
+        "cumulativeSuccess": 35,
+        "period": 5,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0054",
+        "successDelta": 7
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 54,
+        "cumulativeSuccess": 42,
+        "period": 6,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0066",
+        "successDelta": 7
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 63,
+        "cumulativeSuccess": 49,
+        "period": 7,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0078",
+        "successDelta": 7
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 9,
+        "cumulativeAttempts": 72,
+        "cumulativeSuccess": 56,
+        "period": 8,
+        "point": "p6",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0090",
+        "successDelta": 7
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 10,
+        "cumulativeSuccess": 8,
+        "period": 1,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0007",
+        "successDelta": 8
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 20,
+        "cumulativeSuccess": 16,
+        "period": 2,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0019",
+        "successDelta": 8
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 30,
+        "cumulativeSuccess": 24,
+        "period": 3,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0031",
+        "successDelta": 8
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 40,
+        "cumulativeSuccess": 32,
+        "period": 4,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0043",
+        "successDelta": 8
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 50,
+        "cumulativeSuccess": 40,
+        "period": 5,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0055",
+        "successDelta": 8
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 60,
+        "cumulativeSuccess": 48,
+        "period": 6,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0067",
+        "successDelta": 8
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 70,
+        "cumulativeSuccess": 56,
+        "period": 7,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0079",
+        "successDelta": 8
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 10,
+        "cumulativeAttempts": 80,
+        "cumulativeSuccess": 64,
+        "period": 8,
+        "point": "p7",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "language",
+        "sourceId": "r0091",
+        "successDelta": 8
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 11,
+        "cumulativeSuccess": 9,
+        "period": 1,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0008",
+        "successDelta": 9
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 22,
+        "cumulativeSuccess": 18,
+        "period": 2,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0020",
+        "successDelta": 9
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 33,
+        "cumulativeSuccess": 27,
+        "period": 3,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0032",
+        "successDelta": 9
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 44,
+        "cumulativeSuccess": 36,
+        "period": 4,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0044",
+        "successDelta": 9
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 55,
+        "cumulativeSuccess": 45,
+        "period": 5,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0056",
+        "successDelta": 9
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 66,
+        "cumulativeSuccess": 54,
+        "period": 6,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0068",
+        "successDelta": 9
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 77,
+        "cumulativeSuccess": 63,
+        "period": 7,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0080",
+        "successDelta": 9
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 11,
+        "cumulativeAttempts": 88,
+        "cumulativeSuccess": 72,
+        "period": 8,
+        "point": "p8",
+        "region": "north",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0092",
+        "successDelta": 9
+      },
+      {
+        "asOf": 2,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 12,
+        "cumulativeSuccess": 10,
+        "period": 1,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0009",
+        "successDelta": 10
+      },
+      {
+        "asOf": 3,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 24,
+        "cumulativeSuccess": 20,
+        "period": 2,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0021",
+        "successDelta": 10
+      },
+      {
+        "asOf": 4,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 36,
+        "cumulativeSuccess": 30,
+        "period": 3,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0033",
+        "successDelta": 10
+      },
+      {
+        "asOf": 5,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 48,
+        "cumulativeSuccess": 40,
+        "period": 4,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0045",
+        "successDelta": 10
+      },
+      {
+        "asOf": 6,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 60,
+        "cumulativeSuccess": 50,
+        "period": 5,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0057",
+        "successDelta": 10
+      },
+      {
+        "asOf": 7,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 72,
+        "cumulativeSuccess": 60,
+        "period": 6,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0069",
+        "successDelta": 10
+      },
+      {
+        "asOf": 8,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 84,
+        "cumulativeSuccess": 70,
+        "period": 7,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0081",
+        "successDelta": 10
+      },
+      {
+        "asOf": 9,
+        "attemptsDelta": 12,
+        "cumulativeAttempts": 96,
+        "cumulativeSuccess": 80,
+        "period": 8,
+        "point": "p9",
+        "region": "south",
+        "reset": false,
+        "revision": 1,
+        "service": "card",
+        "sourceId": "r0093",
+        "successDelta": 10
+      }
+    ],
+    "legalRecordCount": 148,
+    "resets": [
+      {
+        "period": 5,
+        "point": "p12",
+        "sourceId": "r0100"
+      }
+    ],
+    "supersededRecordIds": [
+      "r0000"
+    ]
+  },
+  "priors": {
+    "layers": [
+      {
+        "boundary": [],
+        "converged": false,
+        "dimensions": {
+          "region": "north",
+          "service": "card"
+        },
+        "estimable": true,
+        "estimationTarget": {
+          "model": "Beta-Binomial",
+          "parameterization": {
+            "k": "alpha+beta",
+            "mu": "alpha/(alpha+beta)"
+          },
+          "totalAttempts": 194,
+          "totalSuccess": 107,
+          "trainingRows": 29
+        },
+        "iterations": 61,
+        "layerKey": "north\u0001card",
+        "logLik": -54.60220265988687,
+        "moments": {
+          "binomialVariance": 0.036973949048563964,
+          "empiricalVariance": 0.08279171319345618,
+          "k": 4.398407672515458,
+          "mu": 0.5515463917525774,
+          "varianceAtBoundary": false
+        },
+        "overdispersion": {
+          "binomialSamplingVariance": 0.036973949048563964,
+          "empiricalWeightedVariance": 0.08279171319345618,
+          "intraclassCorrelation": 0.18383431679309833,
+          "logLikBetaBinomial": -54.60220265988687,
+          "logLikBinomial": -64.09278895495993,
+          "logLikImprovement": 9.490586295073058,
+          "varianceRatio": 2.2391904387792665
+        },
+        "prior": {
+          "alpha": 2.2935885843045427,
+          "beta": 2.1460921969800473,
+          "k": 4.43968078128459,
+          "mu": 0.5166111478043944
+        },
+        "status": "maximum_likelihood_interior_solution"
+      },
+      {
+        "boundary": [],
+        "converged": false,
+        "dimensions": {
+          "region": "north",
+          "service": "language"
+        },
+        "estimable": true,
+        "estimationTarget": {
+          "model": "Beta-Binomial",
+          "parameterization": {
+            "k": "alpha+beta",
+            "mu": "alpha/(alpha+beta)"
+          },
+          "totalAttempts": 198,
+          "totalSuccess": 132,
+          "trainingRows": 24
+        },
+        "iterations": 61,
+        "layerKey": "north\u0001language",
+        "logLik": -48.53775368711465,
+        "moments": {
+          "binomialVariance": 0.02693602693602696,
+          "empiricalVariance": 0.06218596218596219,
+          "k": 5.304188096987514,
+          "mu": 0.6666666666666666,
+          "varianceAtBoundary": false
+        },
+        "overdispersion": {
+          "binomialSamplingVariance": 0.02693602693602696,
+          "empiricalWeightedVariance": 0.06218596218596219,
+          "intraclassCorrelation": 0.1492021505049522,
+          "logLikBetaBinomial": -48.53775368711465,
+          "logLikBinomial": -53.82237135816613,
+          "logLikImprovement": 5.284617671051478,
+          "varianceRatio": 2.3086538461538444
+        },
+        "prior": {
+          "alpha": 3.5262842623573336,
+          "beta": 2.1760320019568917,
+          "k": 5.702316264314225,
+          "mu": 0.6183950694606752
+        },
+        "status": "maximum_likelihood_interior_solution"
+      },
+      {
+        "boundary": [],
+        "converged": false,
+        "dimensions": {
+          "region": "south",
+          "service": "card"
+        },
+        "estimable": true,
+        "estimationTarget": {
+          "model": "Beta-Binomial",
+          "parameterization": {
+            "k": "alpha+beta",
+            "mu": "alpha/(alpha+beta)"
+          },
+          "totalAttempts": 192,
+          "totalSuccess": 114,
+          "trainingRows": 24
+        },
+        "iterations": 61,
+        "layerKey": "south\u0001card",
+        "logLik": -49.77414319311561,
+        "moments": {
+          "binomialVariance": 0.03015136718749999,
+          "empiricalVariance": 0.08365885416666667,
+          "k": 3.5079847908745228,
+          "mu": 0.59375,
+          "varianceAtBoundary": false
+        },
+        "overdispersion": {
+          "binomialSamplingVariance": 0.03015136718749999,
+          "empiricalWeightedVariance": 0.08365885416666667,
+          "intraclassCorrelation": 0.2064987657825727,
+          "logLikBetaBinomial": -49.77414319311561,
+          "logLikBinomial": -61.33083825191636,
+          "logLikImprovement": 11.556695058800749,
+          "varianceRatio": 2.774628879892039
+        },
+        "prior": {
+          "alpha": 2.1280670822809733,
+          "beta": 1.7145768735328988,
+          "k": 3.842643955813872,
+          "mu": 0.5538028260623091
+        },
+        "status": "maximum_likelihood_interior_solution"
+      },
+      {
+        "boundary": [],
+        "converged": false,
+        "dimensions": {
+          "region": "south",
+          "service": "language"
+        },
+        "estimable": true,
+        "estimationTarget": {
+          "model": "Beta-Binomial",
+          "parameterization": {
+            "k": "alpha+beta",
+            "mu": "alpha/(alpha+beta)"
+          },
+          "totalAttempts": 216,
+          "totalSuccess": 150,
+          "trainingRows": 24
+        },
+        "iterations": 61,
+        "layerKey": "south\u0001language",
+        "logLik": -50.18635203075831,
+        "moments": {
+          "binomialVariance": 0.023576817558299025,
+          "empiricalVariance": 0.059942680776014105,
+          "k": 4.834905024922536,
+          "mu": 0.6944444444444444,
+          "varianceAtBoundary": false
+        },
+        "overdispersion": {
+          "binomialSamplingVariance": 0.023576817558299025,
+          "empiricalWeightedVariance": 0.059942680776014105,
+          "intraclassCorrelation": 0.1551381931190616,
+          "logLikBetaBinomial": -50.18635203075831,
+          "logLikBinomial": -56.043638971892555,
+          "logLikImprovement": 5.857286941134248,
+          "varianceRatio": 2.54244155844156
+        },
+        "prior": {
+          "alpha": 3.496778207024652,
+          "beta": 1.9490877650802632,
+          "k": 5.445865972104915,
+          "mu": 0.6420977352244845
+        },
+        "status": "maximum_likelihood_interior_solution"
+      }
+    ],
+    "poolBy": [
+      "region",
+      "service"
+    ],
+    "priorByLayer": {
+      "north\u0001card": {
+        "alpha": 2.2935885843045427,
+        "beta": 2.1460921969800473,
+        "k": 4.43968078128459,
+        "mu": 0.5166111478043944
+      },
+      "north\u0001language": {
+        "alpha": 3.5262842623573336,
+        "beta": 2.1760320019568917,
+        "k": 5.702316264314225,
+        "mu": 0.6183950694606752
+      },
+      "south\u0001card": {
+        "alpha": 2.1280670822809733,
+        "beta": 1.7145768735328988,
+        "k": 3.842643955813872,
+        "mu": 0.5538028260623091
+      },
+      "south\u0001language": {
+        "alpha": 3.496778207024652,
+        "beta": 1.9490877650802632,
+        "k": 5.445865972104915,
+        "mu": 0.6420977352244845
+      }
+    },
+    "trainingWindow": {
+      "from": 1,
+      "through": 6
+    }
+  },
+  "report": "# 外卡服务点资源复核清单（Beta-Binomial 分层分析）\n\n- 分析时点 as_of <= 10；训练窗口 period 1-6；业务阈值 80.00%\n- 分层：region × service；输入指纹：96c7d5c89ebe1445…；蒙特卡洛：10000 次抽样（种子 20261114，可复算）\n- 合法上报 148 条；被替代修订 1 条；未来时点修订（本次不可见）1 条；台账重置 1 处\n\n## 一、全量复核清单（按“低于阈值的后验概率”降序，非排名榜）\n\n| 点 | 层 | 尝试数 | 原始率 | 收缩后验均值 | 95%可信区间 | P(率<阈值) | 后验名次(95%区间) | 夺冠概率 | 前三概率 | 标记 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| p15 | north/card | 64 | 12.50% | 15.04% | [7.66%, 24.35%] | 100.0% | #19 [17-20] | 0.0% | 0.0% |  |\n| p18 | north/language | 48 | 16.67% | 21.46% | [11.67%, 33.27%] | 100.0% | #18 [16-20] | 0.0% | 0.0% |  |\n| p19 | south/language | 48 | 16.67% | 21.51% | [11.68%, 33.36%] | 100.0% | #18 [16-20] | 0.0% | 0.0% |  |\n| p20 | south/card | 64 | 12.50% | 14.93% | [7.55%, 24.26%] | 100.0% | #19 [17-20] | 0.0% | 0.0% |  |\n| p0 | north/card | 24 | 33.33% | 36.19% | [19.91%, 54.32%] | 100.0% | #16 [13-18] | 0.0% | 0.0% |  |\n| p1 | south/card | 32 | 50.00% | 50.58% | [34.50%, 66.59%] | 100.0% | #14 [10-16] | 0.0% | 0.0% |  |\n| p2 | north/language | 40 | 60.00% | 60.23% | [45.84%, 73.77%] | 99.9% | #12 [8-15] | 0.0% | 0.0% |  |\n| p12 | north/card | 28 | 57.14% | 56.39% | [39.33%, 72.71%] | 99.9% | #13 [9-15] | 0.0% | 0.0% | 重置×1 |\n| p3 | south/language | 48 | 66.67% | 66.42% | [53.35%, 78.32%] | 98.9% | #10 [6-14] | 0.0% | 0.1% |  |\n| p13 | south/card | 5 | 40.00% | 46.68% | [17.14%, 77.64%] | 98.4% | #15 [7-18] | 0.0% | 0.5% | 小样本 |\n| p4 | north/card | 56 | 71.43% | 69.98% | [57.94%, 80.76%] | 96.4% | #9 [5-13] | 0.0% | 0.6% |  |\n| p5 | south/card | 64 | 75.00% | 73.89% | [62.89%, 83.55%] | 87.8% | #8 [4-12] | 0.0% | 2.3% |  |\n| p17 | north/card | 4 | 75.00% | 62.72% | [30.06%, 89.73%] | 85.6% | #11 [2-16] | 1.3% | 7.5% | 小样本 |\n| p6 | north/language | 72 | 77.78% | 76.61% | [66.65%, 85.27%] | 75.3% | #7 [3-11] | 0.0% | 5.5% |  |\n| p7 | south/language | 80 | 80.00% | 78.99% | [69.80%, 86.90%] | 57.1% | #6 [2-10] | 0.2% | 12.9% |  |\n| p8 | north/card | 88 | 81.82% | 80.37% | [71.73%, 87.77%] | 44.4% | #5 [2-9] | 0.3% | 21.1% |  |\n| p9 | south/card | 96 | 83.33% | 82.26% | [74.22%, 89.07%] | 26.5% | #4 [2-8] | 0.9% | 36.1% |  |\n| p10 | north/language | 104 | 84.62% | 83.43% | [75.96%, 89.75%] | 16.5% | #4 [2-8] | 1.2% | 48.4% |  |\n| p11 | south/language | 112 | 85.71% | 84.72% | [77.71%, 90.61%] | 8.4% | #3 [1-7] | 2.5% | 65.3% |  |\n| p14 | south/card | 100 | 94.00% | 92.57% | [86.83%, 96.77%] | 0.0% | #1 [1-2] | 93.5% | 99.7% |  |\n| p16 | east/card | 16 | 62.50% | — | — | — | — | — | — | 无层先验-排除 |\n\n## 二、阈值复核（决策：哪些点低于业务阈值）\n\n以下点“低于阈值”的后验概率不低于 50%，建议优先安排资源复核：\n\n| 点 | 层 | 尝试数 | 原始率 | 后验均值 | P(率<阈值) | 95%可信区间 | 标记 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| p15 | north/card | 64 | 12.50% | 15.04% | 100.0% | [7.66%, 24.35%] |  |\n| p18 | north/language | 48 | 16.67% | 21.46% | 100.0% | [11.67%, 33.27%] |  |\n| p19 | south/language | 48 | 16.67% | 21.51% | 100.0% | [11.68%, 33.36%] |  |\n| p20 | south/card | 64 | 12.50% | 14.93% | 100.0% | [7.55%, 24.26%] |  |\n| p0 | north/card | 24 | 33.33% | 36.19% | 100.0% | [19.91%, 54.32%] |  |\n| p1 | south/card | 32 | 50.00% | 50.58% | 100.0% | [34.50%, 66.59%] |  |\n| p2 | north/language | 40 | 60.00% | 60.23% | 99.9% | [45.84%, 73.77%] |  |\n| p12 | north/card | 28 | 57.14% | 56.39% | 99.9% | [39.33%, 72.71%] | 重置×1 |\n| p3 | south/language | 48 | 66.67% | 66.42% | 98.9% | [53.35%, 78.32%] |  |\n| p13 | south/card | 5 | 40.00% | 46.68% | 98.4% | [17.14%, 77.64%] | 小样本 |\n| p4 | north/card | 56 | 71.43% | 69.98% | 96.4% | [57.94%, 80.76%] |  |\n| p5 | south/card | 64 | 75.00% | 73.89% | 87.8% | [62.89%, 83.55%] |  |\n| p17 | north/card | 4 | 75.00% | 62.72% | 85.6% | [30.06%, 89.73%] | 小样本 |\n| p6 | north/language | 72 | 77.78% | 76.61% | 75.3% | [66.65%, 85.27%] |  |\n| p7 | south/language | 80 | 80.00% | 78.99% | 57.1% | [69.80%, 86.90%] |  |\n\n## 三、头部位置可靠性（决策：前几名的位置是否可靠）\n\n名次来自后验抽样的分布而非点估计，因此两笔全成的小点不会得到确定的冠军头衔：\n\n| 点 | 层 | 尝试数 | 后验均值 | 后验名次中位数 | 名次95%区间 | 夺冠概率 | 层内夺冠概率 |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| p14 | south/card | 100 | 92.57% | #1 | [1, 2] | 93.5% | 98.7% |\n| p11 | south/language | 112 | 84.72% | #3 | [1, 7] | 2.5% | 85.2% |\n| p17 | north/card | 4 | 62.72% | #11 | [2, 16] | 1.3% | 13.8% |\n| p10 | north/language | 104 | 83.43% | #4 | [2, 8] | 1.2% | 87.6% |\n| p9 | south/card | 96 | 82.26% | #4 | [2, 8] | 0.9% | 1.3% |\n\n## 四、固定业务结构标准化（跨层资源比较）\n\n| 服务 | 标准化后验率 | 同结构原始率 | 全体交易总体率（不同口径） | 覆盖权重 |\n| --- | --- | --- | --- | --- |\n| card | 62.09% | 62.19% | 63.20% | 100.0% |\n| language | 67.96% | 68.06% | 68.12% | 100.0% |\n\n- **card**：标准化率按固定业务结构（standardWeights）对各层后验均值加权，回答“结构不变时服务表现如何”；总体率是全部成功数除以全部尝试次数，混合了各层交易量结构，会被大层和交易量波动主导，两者不是同一估计目标。\n- **language**：标准化率按固定业务结构（standardWeights）对各层后验均值加权，回答“结构不变时服务表现如何”；总体率是全部成功数除以全部尝试次数，混合了各层交易量结构，会被大层和交易量波动主导，两者不是同一估计目标。\n\n## 五、先验与方法说明\n\n- 层（region=north，service=card）：先验 Beta(alpha=2.294, beta=2.146)，mu=0.5166，k=4.440；状态 maximum_likelihood_interior_solution（内部解）；ICC=0.1838，方差比=2.239，似然提升=9.49\n- 层（region=north，service=language）：先验 Beta(alpha=3.526, beta=2.176)，mu=0.6184，k=5.702；状态 maximum_likelihood_interior_solution（内部解）；ICC=0.1492，方差比=2.309，似然提升=5.28\n- 层（region=south，service=card）：先验 Beta(alpha=2.128, beta=1.715)，mu=0.5538，k=3.843；状态 maximum_likelihood_interior_solution（内部解）；ICC=0.2065，方差比=2.775，似然提升=11.56\n- 层（region=south，service=language）：先验 Beta(alpha=3.497, beta=1.949)，mu=0.6421，k=5.446；状态 maximum_likelihood_interior_solution（内部解）；ICC=0.1551，方差比=2.542，似然提升=5.86\n\n- 点 p16（east/card）：该层训练窗口无数据，未借用全局或其他层先验，已排除出后验、排序与标准化。\n\n标记约定：零尝试点只返回先验后验、无原始率；全成功点后验质量仍小于 1，可信区间上界不为 100%；重置期增量按重置后计数器重新起算并显式标记；小样本点保留在清单中但收缩向本层先验。\n",
+  "version": 1
+}
