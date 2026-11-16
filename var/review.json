@@ -1,0 +1,3251 @@
+{
+  "canonicalFingerprint": "aeda6d6515cbe3a5b3fbccc27eb3a1f91ec01dbfcade9f02a58bd38f5acc73f4",
+  "checks": {
+    "conjugate": {
+      "allPass": true,
+      "failures": 0,
+      "total": 12
+    },
+    "resetPoints": [],
+    "unavailablePriorPoints": []
+  },
+  "layerPriors": [
+    {
+      "alpha": 5.896032831737345,
+      "beta": 2.358413132694938,
+      "binomialReferenceVariance": 0.20408163265306123,
+      "concentration": 8.254445964432282,
+      "contributingPointCount": 3,
+      "contributingPoints": [
+        "p0",
+        "p4",
+        "p8"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [],
+      "intraClassCorrelation": 0.10805617147080565,
+      "layerKey": "north/card",
+      "logMarginalBetaBinomial": -10.25492771600694,
+      "logMarginalBinomial": -13.2016433655789,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 5.4303030303030315,
+      "pooledRateAdjusted": 0.7142857142857143,
+      "pooledRateRaw": 0.7142857142857143,
+      "status": "estimated",
+      "trainingAttempts": 126,
+      "trainingSuccess": 90,
+      "weightedRateVariance": 0.026386312100597824
+    },
+    {
+      "alpha": 26.13199426111908,
+      "beta": 7.466284074605451,
+      "binomialReferenceVariance": 0.1728395061728395,
+      "concentration": 33.59827833572453,
+      "contributingPointCount": 3,
+      "contributingPoints": [
+        "p10",
+        "p2",
+        "p6"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [],
+      "intraClassCorrelation": 0.02890317229939872,
+      "layerKey": "north/language",
+      "logMarginalBetaBinomial": -9.027547881942823,
+      "logMarginalBinomial": -9.573617420372912,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 2.531868131868132,
+      "pooledRateAdjusted": 0.7777777777777778,
+      "pooledRateRaw": 0.7777777777777778,
+      "status": "estimated",
+      "trainingAttempts": 162,
+      "trainingSuccess": 126,
+      "weightedRateVariance": 0.008103830326052549
+    },
+    {
+      "alpha": 13.043478260869563,
+      "beta": 4.347826086956521,
+      "binomialReferenceVariance": 0.1875,
+      "concentration": 17.391304347826082,
+      "contributingPointCount": 3,
+      "contributingPoints": [
+        "p1",
+        "p5",
+        "p9"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [],
+      "intraClassCorrelation": 0.05437352245862886,
+      "layerKey": "south/card",
+      "logMarginalBetaBinomial": -9.5556256602694,
+      "logMarginalBinomial": -10.835944159929628,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 3.555555555555556,
+      "pooledRateAdjusted": 0.75,
+      "pooledRateRaw": 0.75,
+      "status": "estimated",
+      "trainingAttempts": 144,
+      "trainingSuccess": 108,
+      "weightedRateVariance": 0.013888888888888892
+    },
+    {
+      "alpha": 51.36842105263159,
+      "beta": 12.842105263157894,
+      "binomialReferenceVariance": 0.15999999999999998,
+      "concentration": 64.21052631578948,
+      "contributingPointCount": 3,
+      "contributingPoints": [
+        "p11",
+        "p3",
+        "p7"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [],
+      "intraClassCorrelation": 0.015334947538337368,
+      "layerKey": "south/language",
+      "logMarginalBetaBinomial": -8.600068567291373,
+      "logMarginalBinomial": -8.799304266150163,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 1.9047619047619047,
+      "pooledRateAdjusted": 0.8,
+      "pooledRateRaw": 0.8,
+      "status": "estimated",
+      "trainingAttempts": 180,
+      "trainingSuccess": 144,
+      "weightedRateVariance": 0.0050793650793650785
+    }
+  ],
+  "ledgerAudit": {
+    "droppedAsFuture": [],
+    "inputRecords": 96,
+    "resetCount": 0,
+    "resets": [],
+    "superseded": []
+  },
+  "points": [
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 6,
+        "success": 2
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 2,
+        "handAlpha": 7.896032831737345,
+        "handBeta": 6.358413132694938,
+        "posteriorAlpha": 7.896032831737345,
+        "posteriorBeta": 6.358413132694938,
+        "priorAlpha": 5.896032831737345,
+        "priorBeta": 2.358413132694938,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/card",
+      "point": "p0",
+      "posterior": {
+        "alpha": 7.896032831737345,
+        "beta": 6.358413132694938,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.3396282435448978,
+          "upper": 0.7593354645366324
+        },
+        "mean": 0.5539347408829175,
+        "status": "estimated",
+        "stdDev": 0.12727124206909016,
+        "variance": 0.01619796905780894
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.02057152753480107,
+      "probabilityBelowThreshold": 0.9794284724651989,
+      "rawRate": 0.3333333333333333,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.3333333333333333,
+      "trainingWindow": {
+        "attempts": 18,
+        "success": 6
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 8,
+        "success": 4
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 4,
+        "handAlpha": 17.043478260869563,
+        "handBeta": 8.34782608695652,
+        "posteriorAlpha": 17.043478260869563,
+        "posteriorBeta": 8.34782608695652,
+        "priorAlpha": 13.043478260869563,
+        "priorBeta": 4.347826086956521,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "south/card",
+      "point": "p1",
+      "posterior": {
+        "alpha": 17.043478260869563,
+        "beta": 8.34782608695652,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.5130537135516862,
+          "upper": 0.8137827620992356
+        },
+        "mean": 0.6712328767123288,
+        "status": "estimated",
+        "stdDev": 0.09144298053640856,
+        "variance": 0.008361818689381994
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.07241862041440839,
+      "probabilityBelowThreshold": 0.9275813795855916,
+      "rawRate": 0.5,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.5,
+      "trainingWindow": {
+        "attempts": 24,
+        "success": 12
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 26,
+        "success": 22
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 22,
+        "handAlpha": 48.131994261119075,
+        "handBeta": 11.46628407460545,
+        "posteriorAlpha": 48.131994261119075,
+        "posteriorBeta": 11.466284074605454,
+        "priorAlpha": 26.13199426111908,
+        "priorBeta": 7.466284074605451,
+        "status": "pass"
+      },
+      "decision": "hold",
+      "decisionReason": "低于阈值的后验概率 < 0.5",
+      "layerKey": "north/language",
+      "point": "p10",
+      "posterior": {
+        "alpha": 48.131994261119075,
+        "beta": 11.466284074605454,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.7187217710567456,
+          "upper": 0.8846788624982763
+        },
+        "mean": 0.8076071256620124,
+        "status": "estimated",
+        "stdDev": 0.050636586307953785,
+        "variance": 0.002564063872922853
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.5848675553679799,
+      "probabilityBelowThreshold": 0.41513244463202015,
+      "rawRate": 0.8461538461538461,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.8461538461538461,
+      "trainingWindow": {
+        "attempts": 78,
+        "success": 66
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 28,
+        "success": 24
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 24,
+        "handAlpha": 75.36842105263159,
+        "handBeta": 16.842105263157894,
+        "posteriorAlpha": 75.36842105263159,
+        "posteriorBeta": 16.84210526315789,
+        "priorAlpha": 51.36842105263159,
+        "priorBeta": 12.842105263157894,
+        "status": "pass"
+      },
+      "decision": "hold",
+      "decisionReason": "低于阈值的后验概率 < 0.5",
+      "layerKey": "south/language",
+      "point": "p11",
+      "posterior": {
+        "alpha": 75.36842105263159,
+        "beta": 16.84210526315789,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.7477745923853444,
+          "upper": 0.8790699379323583
+        },
+        "mean": 0.817351598173516,
+        "status": "estimated",
+        "stdDev": 0.04002026095843231,
+        "variance": 0.0016016212871810213
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.6832956551944265,
+      "probabilityBelowThreshold": 0.3167043448055735,
+      "rawRate": 0.8571428571428571,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.8571428571428571,
+      "trainingWindow": {
+        "attempts": 84,
+        "success": 72
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 10,
+        "success": 6
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 6,
+        "handAlpha": 32.131994261119075,
+        "handBeta": 11.46628407460545,
+        "posteriorAlpha": 32.131994261119075,
+        "posteriorBeta": 11.46628407460545,
+        "priorAlpha": 26.13199426111908,
+        "priorBeta": 7.466284074605451,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/language",
+      "point": "p2",
+      "posterior": {
+        "alpha": 32.131994261119075,
+        "beta": 11.46628407460545,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6225032917777756,
+          "upper": 0.8390076002095301
+        },
+        "mean": 0.7370014479399762,
+        "status": "estimated",
+        "stdDev": 0.06592525259520697,
+        "variance": 0.004346138929741844
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.17275179271917263,
+      "probabilityBelowThreshold": 0.8272482072808274,
+      "rawRate": 0.6,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.6,
+      "trainingWindow": {
+        "attempts": 30,
+        "success": 18
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 12,
+        "success": 8
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 8,
+        "handAlpha": 59.36842105263159,
+        "handBeta": 16.842105263157894,
+        "posteriorAlpha": 59.36842105263159,
+        "posteriorBeta": 16.842105263157894,
+        "priorAlpha": 51.36842105263159,
+        "priorBeta": 12.842105263157894,
+        "status": "pass"
+      },
+      "decision": "watch",
+      "decisionReason": "低于阈值的后验概率位于 [0.5, 0.8)",
+      "layerKey": "south/language",
+      "point": "p3",
+      "posterior": {
+        "alpha": 59.36842105263159,
+        "beta": 16.842105263157894,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6973001620120853,
+          "upper": 0.8523386924469679
+        },
+        "mean": 0.7790055248618786,
+        "status": "estimated",
+        "stdDev": 0.04721964532325782,
+        "variance": 0.0022296949044542645
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.34486358609235923,
+      "probabilityBelowThreshold": 0.6551364139076408,
+      "rawRate": 0.6666666666666666,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.6666666666666666,
+      "trainingWindow": {
+        "attempts": 36,
+        "success": 24
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 14,
+        "success": 10
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 10,
+        "handAlpha": 15.896032831737344,
+        "handBeta": 6.358413132694938,
+        "posteriorAlpha": 15.896032831737344,
+        "posteriorBeta": 6.358413132694938,
+        "priorAlpha": 5.896032831737345,
+        "priorBeta": 2.358413132694938,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/card",
+      "point": "p4",
+      "posterior": {
+        "alpha": 15.896032831737344,
+        "beta": 6.358413132694938,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.5493892614375401,
+          "upper": 0.8568354941802626
+        },
+        "mean": 0.7142857142857143,
+        "status": "estimated",
+        "stdDev": 0.09368044855214508,
+        "variance": 0.0087760264409311
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.18761740645802516,
+      "probabilityBelowThreshold": 0.8123825935419748,
+      "rawRate": 0.7142857142857143,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.7142857142857143,
+      "trainingWindow": {
+        "attempts": 42,
+        "success": 30
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 16,
+        "success": 12
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 12,
+        "handAlpha": 25.043478260869563,
+        "handBeta": 8.34782608695652,
+        "posteriorAlpha": 25.043478260869563,
+        "posteriorBeta": 8.34782608695652,
+        "priorAlpha": 13.043478260869563,
+        "priorBeta": 4.347826086956521,
+        "status": "pass"
+      },
+      "decision": "watch",
+      "decisionReason": "低于阈值的后验概率位于 [0.5, 0.8)",
+      "layerKey": "south/card",
+      "point": "p5",
+      "posterior": {
+        "alpha": 25.043478260869563,
+        "beta": 8.34782608695652,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6202782467994827,
+          "upper": 0.8624705456481946
+        },
+        "mean": 0.7500000000000001,
+        "status": "estimated",
+        "stdDev": 0.07383738582100467,
+        "variance": 0.005451959544879901
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.2645907809832284,
+      "probabilityBelowThreshold": 0.7354092190167716,
+      "rawRate": 0.75,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.75,
+      "trainingWindow": {
+        "attempts": 48,
+        "success": 36
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 18,
+        "success": 14
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 14,
+        "handAlpha": 40.131994261119075,
+        "handBeta": 11.46628407460545,
+        "posteriorAlpha": 40.131994261119075,
+        "posteriorBeta": 11.46628407460545,
+        "priorAlpha": 26.13199426111908,
+        "priorBeta": 7.466284074605451,
+        "status": "pass"
+      },
+      "decision": "watch",
+      "decisionReason": "低于阈值的后验概率位于 [0.5, 0.8)",
+      "layerKey": "north/language",
+      "point": "p6",
+      "posterior": {
+        "alpha": 40.131994261119075,
+        "beta": 11.46628407460545,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6775853755502372,
+          "upper": 0.8656271844218479
+        },
+        "mean": 0.7777777777777777,
+        "status": "estimated",
+        "stdDev": 0.0573239018776602,
+        "variance": 0.0032860297264796145
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.3709621054464587,
+      "probabilityBelowThreshold": 0.6290378945535413,
+      "rawRate": 0.7777777777777778,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.7777777777777778,
+      "trainingWindow": {
+        "attempts": 54,
+        "success": 42
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 20,
+        "success": 16
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 16,
+        "handAlpha": 67.36842105263159,
+        "handBeta": 16.842105263157894,
+        "posteriorAlpha": 67.36842105263159,
+        "posteriorBeta": 16.84210526315789,
+        "priorAlpha": 51.36842105263159,
+        "priorBeta": 12.842105263157894,
+        "status": "pass"
+      },
+      "decision": "hold",
+      "decisionReason": "低于阈值的后验概率 < 0.5",
+      "layerKey": "south/language",
+      "point": "p7",
+      "posterior": {
+        "alpha": 67.36842105263159,
+        "beta": 16.84210526315789,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.7248228214836503,
+          "upper": 0.8670368834496444
+        },
+        "mean": 0.8,
+        "status": "estimated",
+        "stdDev": 0.043332462258234686,
+        "variance": 0.0018777022853613335
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.5217773611467158,
+      "probabilityBelowThreshold": 0.4782226388532842,
+      "rawRate": 0.8,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.8,
+      "trainingWindow": {
+        "attempts": 60,
+        "success": 48
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 22,
+        "success": 18
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 18,
+        "handAlpha": 23.896032831737344,
+        "handBeta": 6.358413132694938,
+        "posteriorAlpha": 23.896032831737344,
+        "posteriorBeta": 6.358413132694938,
+        "priorAlpha": 5.896032831737345,
+        "priorBeta": 2.358413132694938,
+        "status": "pass"
+      },
+      "decision": "watch",
+      "decisionReason": "低于阈值的后验概率位于 [0.5, 0.8)",
+      "layerKey": "north/card",
+      "point": "p8",
+      "posterior": {
+        "alpha": 23.896032831737344,
+        "beta": 6.358413132694938,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6596398000684285,
+          "upper": 0.8979619606828783
+        },
+        "mean": 0.7898354132754567,
+        "status": "estimated",
+        "stdDev": 0.07287728211343499,
+        "variance": 0.00531109824824119
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.47975416520963854,
+      "probabilityBelowThreshold": 0.5202458347903615,
+      "rawRate": 0.8181818181818182,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.8181818181818182,
+      "trainingWindow": {
+        "attempts": 66,
+        "success": 54
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 24,
+        "success": 20
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 20,
+        "handAlpha": 33.04347826086956,
+        "handBeta": 8.34782608695652,
+        "posteriorAlpha": 33.04347826086956,
+        "posteriorBeta": 8.34782608695652,
+        "priorAlpha": 13.043478260869563,
+        "priorBeta": 4.347826086956521,
+        "status": "pass"
+      },
+      "decision": "hold",
+      "decisionReason": "低于阈值的后验概率 < 0.5",
+      "layerKey": "south/card",
+      "point": "p9",
+      "posterior": {
+        "alpha": 33.04347826086956,
+        "beta": 8.34782608695652,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.6891630192423219,
+          "upper": 0.8909303125288629
+        },
+        "mean": 0.7983193277310925,
+        "status": "estimated",
+        "stdDev": 0.06162856738640037,
+        "variance": 0.0037980803181000915
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.52017611871724,
+      "probabilityBelowThreshold": 0.47982388128276,
+      "rawRate": 0.8333333333333334,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.8333333333333334,
+      "trainingWindow": {
+        "attempts": 72,
+        "success": 60
+      }
+    }
+  ],
+  "ranking": {
+    "draws": 50000,
+    "pairwise": [
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p1",
+            "probability": 0.23082,
+            "standardError": 0.0018843679449619174
+          },
+          {
+            "point": "p10",
+            "probability": 0.02798,
+            "standardError": 0.0007375245026438105
+          },
+          {
+            "point": "p11",
+            "probability": 0.01984,
+            "standardError": 0.0006236405118335402
+          },
+          {
+            "point": "p2",
+            "probability": 0.10156,
+            "standardError": 0.0013508927892323655
+          },
+          {
+            "point": "p3",
+            "probability": 0.04488,
+            "standardError": 0.000925913447358877
+          },
+          {
+            "point": "p4",
+            "probability": 0.1566,
+            "standardError": 0.001625278068516277
+          },
+          {
+            "point": "p5",
+            "probability": 0.0904,
+            "standardError": 0.0012824027448504623
+          },
+          {
+            "point": "p6",
+            "probability": 0.05206,
+            "standardError": 0.0009934762845684843
+          },
+          {
+            "point": "p7",
+            "probability": 0.02906,
+            "standardError": 0.0007512059158446505
+          },
+          {
+            "point": "p8",
+            "probability": 0.05152,
+            "standardError": 0.000988591822745869
+          },
+          {
+            "point": "p9",
+            "probability": 0.03996,
+            "standardError": 0.0008759360524604521
+          }
+        ],
+        "point": "p0"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.76918,
+            "standardError": 0.0018843679449619176
+          },
+          {
+            "point": "p1",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p10",
+            "probability": 0.0946,
+            "standardError": 0.0013088226770651555
+          },
+          {
+            "point": "p11",
+            "probability": 0.06496,
+            "standardError": 0.00110218145874443
+          },
+          {
+            "point": "p2",
+            "probability": 0.28692,
+            "standardError": 0.0020228539917651
+          },
+          {
+            "point": "p3",
+            "probability": 0.1497,
+            "standardError": 0.001595555765242945
+          },
+          {
+            "point": "p4",
+            "probability": 0.36788,
+            "standardError": 0.0021565913177976027
+          },
+          {
+            "point": "p5",
+            "probability": 0.25232,
+            "standardError": 0.0019424449418194586
+          },
+          {
+            "point": "p6",
+            "probability": 0.1649,
+            "standardError": 0.001659566148124262
+          },
+          {
+            "point": "p7",
+            "probability": 0.09942,
+            "standardError": 0.0013381753517383288
+          },
+          {
+            "point": "p8",
+            "probability": 0.1541,
+            "standardError": 0.0016146404553336324
+          },
+          {
+            "point": "p9",
+            "probability": 0.12514,
+            "standardError": 0.001479729572590884
+          }
+        ],
+        "point": "p1"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.97202,
+            "standardError": 0.0007375245026438105
+          },
+          {
+            "point": "p1",
+            "probability": 0.9054,
+            "standardError": 0.0013088226770651555
+          },
+          {
+            "point": "p10",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p11",
+            "probability": 0.44842,
+            "standardError": 0.002224138051470726
+          },
+          {
+            "point": "p2",
+            "probability": 0.80092,
+            "standardError": 0.0017857612024008138
+          },
+          {
+            "point": "p3",
+            "probability": 0.66484,
+            "standardError": 0.002111055538824121
+          },
+          {
+            "point": "p4",
+            "probability": 0.80438,
+            "standardError": 0.0017739944509496076
+          },
+          {
+            "point": "p5",
+            "probability": 0.73756,
+            "standardError": 0.0019675631954272775
+          },
+          {
+            "point": "p6",
+            "probability": 0.6521,
+            "standardError": 0.002130096664473235
+          },
+          {
+            "point": "p7",
+            "probability": 0.55102,
+            "standardError": 0.002224396365758585
+          },
+          {
+            "point": "p8",
+            "probability": 0.56762,
+            "standardError": 0.0022155249292210638
+          },
+          {
+            "point": "p9",
+            "probability": 0.5395,
+            "standardError": 0.0022290794063917958
+          }
+        ],
+        "point": "p10"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.98016,
+            "standardError": 0.0006236405118335397
+          },
+          {
+            "point": "p1",
+            "probability": 0.93504,
+            "standardError": 0.0011021814587444303
+          },
+          {
+            "point": "p10",
+            "probability": 0.55158,
+            "standardError": 0.0022241380514707266
+          },
+          {
+            "point": "p11",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p2",
+            "probability": 0.85196,
+            "standardError": 0.001588232718464142
+          },
+          {
+            "point": "p3",
+            "probability": 0.73004,
+            "standardError": 0.0019853543683685288
+          },
+          {
+            "point": "p4",
+            "probability": 0.84194,
+            "standardError": 0.0016314229151265468
+          },
+          {
+            "point": "p5",
+            "probability": 0.78494,
+            "standardError": 0.0018374395032218068
+          },
+          {
+            "point": "p6",
+            "probability": 0.71122,
+            "standardError": 0.0020267516453675322
+          },
+          {
+            "point": "p7",
+            "probability": 0.6138,
+            "standardError": 0.002177381730427625
+          },
+          {
+            "point": "p8",
+            "probability": 0.60982,
+            "standardError": 0.002181465413890397
+          },
+          {
+            "point": "p9",
+            "probability": 0.58886,
+            "standardError": 0.0022004722238646865
+          }
+        ],
+        "point": "p11"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.89844,
+            "standardError": 0.0013508927892323655
+          },
+          {
+            "point": "p1",
+            "probability": 0.71308,
+            "standardError": 0.0020228539917651
+          },
+          {
+            "point": "p10",
+            "probability": 0.19908,
+            "standardError": 0.0017857612024008136
+          },
+          {
+            "point": "p11",
+            "probability": 0.14804,
+            "standardError": 0.0015882327184641425
+          },
+          {
+            "point": "p2",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p3",
+            "probability": 0.30784,
+            "standardError": 0.0020643378328171
+          },
+          {
+            "point": "p4",
+            "probability": 0.56616,
+            "standardError": 0.0022164063454159304
+          },
+          {
+            "point": "p5",
+            "probability": 0.44312,
+            "standardError": 0.0022215520052431812
+          },
+          {
+            "point": "p6",
+            "probability": 0.32548,
+            "standardError": 0.0020954368021966208
+          },
+          {
+            "point": "p7",
+            "probability": 0.21632,
+            "standardError": 0.0018413346116336379
+          },
+          {
+            "point": "p8",
+            "probability": 0.28672,
+            "standardError": 0.002022432404803681
+          },
+          {
+            "point": "p9",
+            "probability": 0.2466,
+            "standardError": 0.0019276329526131265
+          }
+        ],
+        "point": "p2"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.95512,
+            "standardError": 0.0009259134473588774
+          },
+          {
+            "point": "p1",
+            "probability": 0.8503,
+            "standardError": 0.0015955557652429452
+          },
+          {
+            "point": "p10",
+            "probability": 0.33516,
+            "standardError": 0.002111055538824121
+          },
+          {
+            "point": "p11",
+            "probability": 0.26996,
+            "standardError": 0.0019853543683685288
+          },
+          {
+            "point": "p2",
+            "probability": 0.69216,
+            "standardError": 0.0020643378328171
+          },
+          {
+            "point": "p3",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p4",
+            "probability": 0.7189,
+            "standardError": 0.0020103869776737014
+          },
+          {
+            "point": "p5",
+            "probability": 0.61928,
+            "standardError": 0.0021715076863782915
+          },
+          {
+            "point": "p6",
+            "probability": 0.5021,
+            "standardError": 0.0022360482552932527
+          },
+          {
+            "point": "p7",
+            "probability": 0.37128,
+            "standardError": 0.0021606997088906175
+          },
+          {
+            "point": "p8",
+            "probability": 0.4325,
+            "standardError": 0.0022155981133770626
+          },
+          {
+            "point": "p9",
+            "probability": 0.39156,
+            "standardError": 0.002182845694958762
+          }
+        ],
+        "point": "p3"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.8434,
+            "standardError": 0.0016252780685162766
+          },
+          {
+            "point": "p1",
+            "probability": 0.63212,
+            "standardError": 0.0021565913177976027
+          },
+          {
+            "point": "p10",
+            "probability": 0.19562,
+            "standardError": 0.0017739944509496076
+          },
+          {
+            "point": "p11",
+            "probability": 0.15806,
+            "standardError": 0.0016314229151265468
+          },
+          {
+            "point": "p2",
+            "probability": 0.43384,
+            "standardError": 0.0022164063454159304
+          },
+          {
+            "point": "p3",
+            "probability": 0.2811,
+            "standardError": 0.0020103869776737014
+          },
+          {
+            "point": "p4",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p5",
+            "probability": 0.39022,
+            "standardError": 0.0021815056800292775
+          },
+          {
+            "point": "p6",
+            "probability": 0.29192,
+            "standardError": 0.0020332373870259224
+          },
+          {
+            "point": "p7",
+            "probability": 0.21164,
+            "standardError": 0.0018267375859712307
+          },
+          {
+            "point": "p8",
+            "probability": 0.2663,
+            "standardError": 0.001976786837269006
+          },
+          {
+            "point": "p9",
+            "probability": 0.2314,
+            "standardError": 0.001886022481308216
+          }
+        ],
+        "point": "p4"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.9096,
+            "standardError": 0.0012824027448504625
+          },
+          {
+            "point": "p1",
+            "probability": 0.74768,
+            "standardError": 0.0019424449418194586
+          },
+          {
+            "point": "p10",
+            "probability": 0.26244,
+            "standardError": 0.0019675631954272775
+          },
+          {
+            "point": "p11",
+            "probability": 0.21506,
+            "standardError": 0.0018374395032218068
+          },
+          {
+            "point": "p2",
+            "probability": 0.55688,
+            "standardError": 0.0022215520052431812
+          },
+          {
+            "point": "p3",
+            "probability": 0.38072,
+            "standardError": 0.0021715076863782915
+          },
+          {
+            "point": "p4",
+            "probability": 0.60978,
+            "standardError": 0.0021815056800292775
+          },
+          {
+            "point": "p5",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p6",
+            "probability": 0.39022,
+            "standardError": 0.0021815056800292775
+          },
+          {
+            "point": "p7",
+            "probability": 0.28666,
+            "standardError": 0.0020223058344375116
+          },
+          {
+            "point": "p8",
+            "probability": 0.34642,
+            "standardError": 0.0021279717272557922
+          },
+          {
+            "point": "p9",
+            "probability": 0.3087,
+            "standardError": 0.002065934703711615
+          }
+        ],
+        "point": "p5"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.94794,
+            "standardError": 0.0009934762845684843
+          },
+          {
+            "point": "p1",
+            "probability": 0.8351,
+            "standardError": 0.0016595661481242621
+          },
+          {
+            "point": "p10",
+            "probability": 0.3479,
+            "standardError": 0.002130096664473235
+          },
+          {
+            "point": "p11",
+            "probability": 0.28878,
+            "standardError": 0.0020267516453675322
+          },
+          {
+            "point": "p2",
+            "probability": 0.67452,
+            "standardError": 0.0020954368021966208
+          },
+          {
+            "point": "p3",
+            "probability": 0.4979,
+            "standardError": 0.0022360482552932527
+          },
+          {
+            "point": "p4",
+            "probability": 0.70808,
+            "standardError": 0.002033237387025922
+          },
+          {
+            "point": "p5",
+            "probability": 0.60978,
+            "standardError": 0.0021815056800292775
+          },
+          {
+            "point": "p6",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p7",
+            "probability": 0.3831,
+            "standardError": 0.0021740947081486583
+          },
+          {
+            "point": "p8",
+            "probability": 0.43472,
+            "standardError": 0.002216928152196187
+          },
+          {
+            "point": "p9",
+            "probability": 0.39692,
+            "standardError": 0.0021880334257044615
+          }
+        ],
+        "point": "p6"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.97094,
+            "standardError": 0.0007512059158446501
+          },
+          {
+            "point": "p1",
+            "probability": 0.90058,
+            "standardError": 0.0013381753517383286
+          },
+          {
+            "point": "p10",
+            "probability": 0.44898,
+            "standardError": 0.002224396365758585
+          },
+          {
+            "point": "p11",
+            "probability": 0.3862,
+            "standardError": 0.002177381730427625
+          },
+          {
+            "point": "p2",
+            "probability": 0.78368,
+            "standardError": 0.0018413346116336376
+          },
+          {
+            "point": "p3",
+            "probability": 0.62872,
+            "standardError": 0.0021606997088906175
+          },
+          {
+            "point": "p4",
+            "probability": 0.78836,
+            "standardError": 0.001826737585971231
+          },
+          {
+            "point": "p5",
+            "probability": 0.71334,
+            "standardError": 0.0020223058344375116
+          },
+          {
+            "point": "p6",
+            "probability": 0.6169,
+            "standardError": 0.0021740947081486583
+          },
+          {
+            "point": "p7",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p8",
+            "probability": 0.5288,
+            "standardError": 0.0022323555272402286
+          },
+          {
+            "point": "p9",
+            "probability": 0.49598,
+            "standardError": 0.0022359957048259283
+          }
+        ],
+        "point": "p7"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.94848,
+            "standardError": 0.0009885918227458693
+          },
+          {
+            "point": "p1",
+            "probability": 0.8459,
+            "standardError": 0.0016146404553336324
+          },
+          {
+            "point": "p10",
+            "probability": 0.43238,
+            "standardError": 0.0022155249292210638
+          },
+          {
+            "point": "p11",
+            "probability": 0.39018,
+            "standardError": 0.002181465413890397
+          },
+          {
+            "point": "p2",
+            "probability": 0.71328,
+            "standardError": 0.002022432404803681
+          },
+          {
+            "point": "p3",
+            "probability": 0.5675,
+            "standardError": 0.0022155981133770626
+          },
+          {
+            "point": "p4",
+            "probability": 0.7337,
+            "standardError": 0.001976786837269006
+          },
+          {
+            "point": "p5",
+            "probability": 0.65358,
+            "standardError": 0.0021279717272557922
+          },
+          {
+            "point": "p6",
+            "probability": 0.56528,
+            "standardError": 0.002216928152196187
+          },
+          {
+            "point": "p7",
+            "probability": 0.4712,
+            "standardError": 0.0022323555272402286
+          },
+          {
+            "point": "p8",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "p9",
+            "probability": 0.47176,
+            "standardError": 0.002232498610973812
+          }
+        ],
+        "point": "p8"
+      },
+      {
+        "beats": [
+          {
+            "point": "p0",
+            "probability": 0.96004,
+            "standardError": 0.0008759360524604521
+          },
+          {
+            "point": "p1",
+            "probability": 0.87486,
+            "standardError": 0.0014797295725908842
+          },
+          {
+            "point": "p10",
+            "probability": 0.4605,
+            "standardError": 0.0022290794063917958
+          },
+          {
+            "point": "p11",
+            "probability": 0.41114,
+            "standardError": 0.0022004722238646865
+          },
+          {
+            "point": "p2",
+            "probability": 0.7534,
+            "standardError": 0.0019276329526131267
+          },
+          {
+            "point": "p3",
+            "probability": 0.60844,
+            "standardError": 0.002182845694958762
+          },
+          {
+            "point": "p4",
+            "probability": 0.7686,
+            "standardError": 0.0018860224813082162
+          },
+          {
+            "point": "p5",
+            "probability": 0.6913,
+            "standardError": 0.002065934703711615
+          },
+          {
+            "point": "p6",
+            "probability": 0.60308,
+            "standardError": 0.002188033425704461
+          },
+          {
+            "point": "p7",
+            "probability": 0.50402,
+            "standardError": 0.0022359957048259283
+          },
+          {
+            "point": "p8",
+            "probability": 0.52824,
+            "standardError": 0.002232498610973812
+          },
+          {
+            "point": "p9",
+            "probability": null,
+            "standardError": null
+          }
+        ],
+        "point": "p9"
+      }
+    ],
+    "rankings": [
+      {
+        "expectedRank": 11.15532,
+        "point": "p0",
+        "rankDistribution": [
+          {
+            "probability": 0.00312,
+            "rank": 1,
+            "standardError": 0.0002494099276291944
+          },
+          {
+            "probability": 0.00374,
+            "rank": 2,
+            "standardError": 0.00027298397022535955
+          },
+          {
+            "probability": 0.00454,
+            "rank": 3,
+            "standardError": 0.00030064558536589225
+          },
+          {
+            "probability": 0.00578,
+            "rank": 4,
+            "standardError": 0.0003390159760247296
+          },
+          {
+            "probability": 0.00814,
+            "rank": 5,
+            "standardError": 0.00040183928130534975
+          },
+          {
+            "probability": 0.011,
+            "rank": 6,
+            "standardError": 0.00046645471377187303
+          },
+          {
+            "probability": 0.01536,
+            "rank": 7,
+            "standardError": 0.0005499830979221089
+          },
+          {
+            "probability": 0.02044,
+            "rank": 8,
+            "standardError": 0.0006328065486386815
+          },
+          {
+            "probability": 0.03578,
+            "rank": 9,
+            "standardError": 0.0008306598774468404
+          },
+          {
+            "probability": 0.06846,
+            "rank": 10,
+            "standardError": 0.0011293646744962409
+          },
+          {
+            "probability": 0.16006,
+            "rank": 11,
+            "standardError": 0.0016397609362343037
+          },
+          {
+            "probability": 0.66358,
+            "rank": 12,
+            "standardError": 0.002113014830047343
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.00312,
+            "standardError": 0.0002494099276291944
+          },
+          {
+            "k": 2,
+            "probability": 0.00686,
+            "standardError": 0.0003691325073737072
+          },
+          {
+            "k": 3,
+            "probability": 0.0114,
+            "standardError": 0.00047476394134348494
+          },
+          {
+            "k": 4,
+            "probability": 0.01718,
+            "standardError": 0.0005811169865009971
+          },
+          {
+            "k": 5,
+            "probability": 0.02532,
+            "standardError": 0.0007025510315984171
+          },
+          {
+            "k": 6,
+            "probability": 0.03632,
+            "standardError": 0.0008366702767518396
+          },
+          {
+            "k": 7,
+            "probability": 0.05168,
+            "standardError": 0.0009900421970805084
+          },
+          {
+            "k": 8,
+            "probability": 0.07212,
+            "standardError": 0.0011568812004696075
+          },
+          {
+            "k": 9,
+            "probability": 0.1079,
+            "standardError": 0.0013874983963954696
+          },
+          {
+            "k": 10,
+            "probability": 0.17636,
+            "standardError": 0.001704448006833884
+          },
+          {
+            "k": 11,
+            "probability": 0.33642,
+            "standardError": 0.002113014830047343
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 9.47088,
+        "point": "p1",
+        "rankDistribution": [
+          {
+            "probability": 0.01032,
+            "rank": 1,
+            "standardError": 0.00045196233471385644
+          },
+          {
+            "probability": 0.01382,
+            "rank": 2,
+            "standardError": 0.0005220920914934452
+          },
+          {
+            "probability": 0.01918,
+            "rank": 3,
+            "standardError": 0.0006133861361328605
+          },
+          {
+            "probability": 0.0214,
+            "rank": 4,
+            "standardError": 0.0006471791096752118
+          },
+          {
+            "probability": 0.02874,
+            "rank": 5,
+            "standardError": 0.0007471815361744427
+          },
+          {
+            "probability": 0.03676,
+            "rank": 6,
+            "standardError": 0.0008415307766207959
+          },
+          {
+            "probability": 0.0514,
+            "rank": 7,
+            "standardError": 0.0009875023037947811
+          },
+          {
+            "probability": 0.07108,
+            "rank": 8,
+            "standardError": 0.0011491530237527116
+          },
+          {
+            "probability": 0.10722,
+            "rank": 9,
+            "standardError": 0.0013836464259340245
+          },
+          {
+            "probability": 0.17278,
+            "rank": 10,
+            "standardError": 0.0016907221628641414
+          },
+          {
+            "probability": 0.3033,
+            "rank": 11,
+            "standardError": 0.00205576803166116
+          },
+          {
+            "probability": 0.164,
+            "rank": 12,
+            "standardError": 0.0016559227035100401
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.01032,
+            "standardError": 0.00045196233471385644
+          },
+          {
+            "k": 2,
+            "probability": 0.02414,
+            "standardError": 0.0006864001806526569
+          },
+          {
+            "k": 3,
+            "probability": 0.04332,
+            "standardError": 0.0009104216341893463
+          },
+          {
+            "k": 4,
+            "probability": 0.06472,
+            "standardError": 0.0011002847049741262
+          },
+          {
+            "k": 5,
+            "probability": 0.09346,
+            "standardError": 0.0013017313732103103
+          },
+          {
+            "k": 6,
+            "probability": 0.13022,
+            "standardError": 0.0015050764206511243
+          },
+          {
+            "k": 7,
+            "probability": 0.18162,
+            "standardError": 0.0017241471839724125
+          },
+          {
+            "k": 8,
+            "probability": 0.2527,
+            "standardError": 0.0019434130286688932
+          },
+          {
+            "k": 9,
+            "probability": 0.35992,
+            "standardError": 0.0021465208762087547
+          },
+          {
+            "k": 10,
+            "probability": 0.5327,
+            "standardError": 0.0022312808429240816
+          },
+          {
+            "k": 11,
+            "probability": 0.836,
+            "standardError": 0.0016559227035100404
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 4.35622,
+        "point": "p10",
+        "rankDistribution": [
+          {
+            "probability": 0.1591,
+            "rank": 1,
+            "standardError": 0.0016357700938701624
+          },
+          {
+            "probability": 0.14982,
+            "rank": 2,
+            "standardError": 0.0015960825016270305
+          },
+          {
+            "probability": 0.13678,
+            "rank": 3,
+            "standardError": 0.0015366927578406816
+          },
+          {
+            "probability": 0.11894,
+            "rank": 4,
+            "standardError": 0.0014477104434243747
+          },
+          {
+            "probability": 0.1106,
+            "rank": 5,
+            "standardError": 0.0014026235417958733
+          },
+          {
+            "probability": 0.09628,
+            "rank": 6,
+            "standardError": 0.0013191676284688007
+          },
+          {
+            "probability": 0.08034,
+            "rank": 7,
+            "standardError": 0.0012156108291719024
+          },
+          {
+            "probability": 0.06524,
+            "rank": 8,
+            "standardError": 0.001104388902515776
+          },
+          {
+            "probability": 0.04518,
+            "rank": 9,
+            "standardError": 0.0009288570137540007
+          },
+          {
+            "probability": 0.02648,
+            "rank": 10,
+            "standardError": 0.000718036344484038
+          },
+          {
+            "probability": 0.0099,
+            "rank": 11,
+            "standardError": 0.00044276381966009825
+          },
+          {
+            "probability": 0.00134,
+            "rank": 12,
+            "standardError": 0.00016359733494161817
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.1591,
+            "standardError": 0.0016357700938701624
+          },
+          {
+            "k": 2,
+            "probability": 0.30892,
+            "standardError": 0.0020663418574863165
+          },
+          {
+            "k": 3,
+            "probability": 0.4457,
+            "standardError": 0.0022228428194544033
+          },
+          {
+            "k": 4,
+            "probability": 0.56464,
+            "standardError": 0.002217303183599392
+          },
+          {
+            "k": 5,
+            "probability": 0.67524,
+            "standardError": 0.002094234668799082
+          },
+          {
+            "k": 6,
+            "probability": 0.77152,
+            "standardError": 0.0018776415504563166
+          },
+          {
+            "k": 7,
+            "probability": 0.85186,
+            "standardError": 0.0015886758033028642
+          },
+          {
+            "k": 8,
+            "probability": 0.9171,
+            "standardError": 0.0012331065647380195
+          },
+          {
+            "k": 9,
+            "probability": 0.96228,
+            "standardError": 0.000852023492633859
+          },
+          {
+            "k": 10,
+            "probability": 0.98876,
+            "standardError": 0.0004714586386948494
+          },
+          {
+            "k": 11,
+            "probability": 0.99866,
+            "standardError": 0.00016359733494161866
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 3.8006399999999996,
+        "point": "p11",
+        "rankDistribution": [
+          {
+            "probability": 0.16606,
+            "rank": 1,
+            "standardError": 0.0016642360193193752
+          },
+          {
+            "probability": 0.18264,
+            "rank": 2,
+            "standardError": 0.001727904108450466
+          },
+          {
+            "probability": 0.16722,
+            "rank": 3,
+            "standardError": 0.0016688766976622328
+          },
+          {
+            "probability": 0.14266,
+            "rank": 4,
+            "standardError": 0.0015640212556100382
+          },
+          {
+            "probability": 0.11498,
+            "rank": 5,
+            "standardError": 0.0014266015533427685
+          },
+          {
+            "probability": 0.08776,
+            "rank": 6,
+            "standardError": 0.001265370952724931
+          },
+          {
+            "probability": 0.06322,
+            "rank": 7,
+            "standardError": 0.0010883311224071468
+          },
+          {
+            "probability": 0.04118,
+            "rank": 8,
+            "standardError": 0.0008886417455870505
+          },
+          {
+            "probability": 0.0226,
+            "rank": 9,
+            "standardError": 0.0006646689401499065
+          },
+          {
+            "probability": 0.00858,
+            "rank": 10,
+            "standardError": 0.00041246535854541774
+          },
+          {
+            "probability": 0.00284,
+            "rank": 11,
+            "standardError": 0.00023798884007448753
+          },
+          {
+            "probability": 0.00026,
+            "rank": 12,
+            "standardError": 0.00007210165046654618
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.16606,
+            "standardError": 0.0016642360193193752
+          },
+          {
+            "k": 2,
+            "probability": 0.3487,
+            "standardError": 0.0021312358386626293
+          },
+          {
+            "k": 3,
+            "probability": 0.51592,
+            "standardError": 0.0022349342433279776
+          },
+          {
+            "k": 4,
+            "probability": 0.65858,
+            "standardError": 0.0021206243590037345
+          },
+          {
+            "k": 5,
+            "probability": 0.77356,
+            "standardError": 0.0018717100544689072
+          },
+          {
+            "k": 6,
+            "probability": 0.86132,
+            "standardError": 0.0015456251654265985
+          },
+          {
+            "k": 7,
+            "probability": 0.92454,
+            "standardError": 0.0011812348487917207
+          },
+          {
+            "k": 8,
+            "probability": 0.96572,
+            "standardError": 0.0008136938195660574
+          },
+          {
+            "k": 9,
+            "probability": 0.98832,
+            "standardError": 0.00048049094892620034
+          },
+          {
+            "k": 10,
+            "probability": 0.9969,
+            "standardError": 0.0002486117454988799
+          },
+          {
+            "k": 11,
+            "probability": 0.99974,
+            "standardError": 0.00007210165046655145
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 7.64912,
+        "point": "p2",
+        "rankDistribution": [
+          {
+            "probability": 0.0239,
+            "rank": 1,
+            "standardError": 0.0006830635402361921
+          },
+          {
+            "probability": 0.03428,
+            "rank": 2,
+            "standardError": 0.0008136938195660576
+          },
+          {
+            "probability": 0.04302,
+            "rank": 3,
+            "standardError": 0.0009074059686821549
+          },
+          {
+            "probability": 0.05574,
+            "rank": 4,
+            "standardError": 0.0010259927134244182
+          },
+          {
+            "probability": 0.0695,
+            "rank": 5,
+            "standardError": 0.001137275252522449
+          },
+          {
+            "probability": 0.08232,
+            "rank": 6,
+            "standardError": 0.0012291738493801438
+          },
+          {
+            "probability": 0.10456,
+            "rank": 7,
+            "standardError": 0.0013684093422656831
+          },
+          {
+            "probability": 0.12684,
+            "rank": 8,
+            "standardError": 0.0014882984539399348
+          },
+          {
+            "probability": 0.1553,
+            "rank": 9,
+            "standardError": 0.0016197648594780663
+          },
+          {
+            "probability": 0.16064,
+            "rank": 10,
+            "standardError": 0.0016421619311139813
+          },
+          {
+            "probability": 0.11432,
+            "rank": 11,
+            "standardError": 0.0014230315358417045
+          },
+          {
+            "probability": 0.02958,
+            "rank": 12,
+            "standardError": 0.0007576941810519597
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.0239,
+            "standardError": 0.0006830635402361921
+          },
+          {
+            "k": 2,
+            "probability": 0.05818,
+            "standardError": 0.0010468532619235611
+          },
+          {
+            "k": 3,
+            "probability": 0.1012,
+            "standardError": 0.0013487665476278688
+          },
+          {
+            "k": 4,
+            "probability": 0.15694,
+            "standardError": 0.0016267134744631581
+          },
+          {
+            "k": 5,
+            "probability": 0.22644,
+            "standardError": 0.0018717100544689074
+          },
+          {
+            "k": 6,
+            "probability": 0.30876,
+            "standardError": 0.002066045800073174
+          },
+          {
+            "k": 7,
+            "probability": 0.41332,
+            "standardError": 0.00220221060573234
+          },
+          {
+            "k": 8,
+            "probability": 0.54016,
+            "standardError": 0.0022288435315203263
+          },
+          {
+            "k": 9,
+            "probability": 0.69546,
+            "standardError": 0.002058132106547099
+          },
+          {
+            "k": 10,
+            "probability": 0.8561,
+            "standardError": 0.001569667417002723
+          },
+          {
+            "k": 11,
+            "probability": 0.97042,
+            "standardError": 0.0007576941810519605
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 5.861680000000001,
+        "point": "p3",
+        "rankDistribution": [
+          {
+            "probability": 0.04376,
+            "rank": 1,
+            "standardError": 0.0009148230692325156
+          },
+          {
+            "probability": 0.07142,
+            "rank": 2,
+            "standardError": 0.0011516873152032196
+          },
+          {
+            "probability": 0.09224,
+            "rank": 3,
+            "standardError": 0.0012940771414409575
+          },
+          {
+            "probability": 0.11288,
+            "rank": 4,
+            "standardError": 0.0014151897794995553
+          },
+          {
+            "probability": 0.12158,
+            "rank": 5,
+            "standardError": 0.0014614944652649219
+          },
+          {
+            "probability": 0.13338,
+            "rank": 6,
+            "standardError": 0.0015204589807028665
+          },
+          {
+            "probability": 0.13438,
+            "rank": 7,
+            "standardError": 0.0015252672919852442
+          },
+          {
+            "probability": 0.12092,
+            "rank": 8,
+            "standardError": 0.0014580696389404726
+          },
+          {
+            "probability": 0.08992,
+            "rank": 9,
+            "standardError": 0.001279331025184647
+          },
+          {
+            "probability": 0.05622,
+            "rank": 10,
+            "standardError": 0.0010301389382020272
+          },
+          {
+            "probability": 0.02044,
+            "rank": 11,
+            "standardError": 0.0006328065486386815
+          },
+          {
+            "probability": 0.00286,
+            "rank": 12,
+            "standardError": 0.00023882296371999072
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.04376,
+            "standardError": 0.0009148230692325156
+          },
+          {
+            "k": 2,
+            "probability": 0.11518,
+            "standardError": 0.0014276804096155413
+          },
+          {
+            "k": 3,
+            "probability": 0.20742,
+            "standardError": 0.0018132674573818394
+          },
+          {
+            "k": 4,
+            "probability": 0.3203,
+            "standardError": 0.002086661975500584
+          },
+          {
+            "k": 5,
+            "probability": 0.44188,
+            "standardError": 0.0022209100188886536
+          },
+          {
+            "k": 6,
+            "probability": 0.57526,
+            "standardError": 0.002210592374907685
+          },
+          {
+            "k": 7,
+            "probability": 0.70964,
+            "standardError": 0.002030029903228029
+          },
+          {
+            "k": 8,
+            "probability": 0.83056,
+            "standardError": 0.0016776774803280874
+          },
+          {
+            "k": 9,
+            "probability": 0.92048,
+            "standardError": 0.0012099303252667074
+          },
+          {
+            "k": 10,
+            "probability": 0.9767,
+            "standardError": 0.0006746422755801772
+          },
+          {
+            "k": 11,
+            "probability": 0.99714,
+            "standardError": 0.0002388229637199896
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 8.06438,
+        "point": "p4",
+        "rankDistribution": [
+          {
+            "probability": 0.04452,
+            "rank": 1,
+            "standardError": 0.000922366191921625
+          },
+          {
+            "probability": 0.04044,
+            "rank": 2,
+            "standardError": 0.0008809609117321834
+          },
+          {
+            "probability": 0.04262,
+            "rank": 3,
+            "standardError": 0.0009033663221528684
+          },
+          {
+            "probability": 0.044,
+            "rank": 4,
+            "standardError": 0.0009172131704244112
+          },
+          {
+            "probability": 0.05358,
+            "rank": 5,
+            "standardError": 0.001007066865704557
+          },
+          {
+            "probability": 0.05786,
+            "rank": 6,
+            "standardError": 0.0010441476945336804
+          },
+          {
+            "probability": 0.0713,
+            "rank": 7,
+            "standardError": 0.001150793726086478
+          },
+          {
+            "probability": 0.08968,
+            "rank": 8,
+            "standardError": 0.0012777910439504575
+          },
+          {
+            "probability": 0.11644,
+            "rank": 9,
+            "standardError": 0.0014344457215245197
+          },
+          {
+            "probability": 0.16686,
+            "rank": 10,
+            "standardError": 0.001667439596507172
+          },
+          {
+            "probability": 0.18544,
+            "rank": 11,
+            "standardError": 0.0017381139571385992
+          },
+          {
+            "probability": 0.08726,
+            "rank": 12,
+            "standardError": 0.001262106908308484
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.04452,
+            "standardError": 0.000922366191921625
+          },
+          {
+            "k": 2,
+            "probability": 0.08496,
+            "standardError": 0.0012469306187595202
+          },
+          {
+            "k": 3,
+            "probability": 0.12758,
+            "standardError": 0.0014920009624661776
+          },
+          {
+            "k": 4,
+            "probability": 0.17158,
+            "standardError": 0.0016860622977814311
+          },
+          {
+            "k": 5,
+            "probability": 0.22516,
+            "standardError": 0.0018679559652197372
+          },
+          {
+            "k": 6,
+            "probability": 0.28302,
+            "standardError": 0.0020145455050705604
+          },
+          {
+            "k": 7,
+            "probability": 0.35432,
+            "standardError": 0.002139052769802559
+          },
+          {
+            "k": 8,
+            "probability": 0.444,
+            "standardError": 0.002221999099909809
+          },
+          {
+            "k": 9,
+            "probability": 0.56044,
+            "standardError": 0.00221967117564742
+          },
+          {
+            "k": 10,
+            "probability": 0.7273,
+            "standardError": 0.0019916561450210226
+          },
+          {
+            "k": 11,
+            "probability": 0.91274,
+            "standardError": 0.001262106908308484
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 6.985839999999999,
+        "point": "p5",
+        "rankDistribution": [
+          {
+            "probability": 0.05558,
+            "rank": 1,
+            "standardError": 0.0010246059105822102
+          },
+          {
+            "probability": 0.0572,
+            "rank": 2,
+            "standardError": 0.0010385389737511057
+          },
+          {
+            "probability": 0.0617,
+            "rank": 3,
+            "standardError": 0.0010760400550165407
+          },
+          {
+            "probability": 0.06736,
+            "rank": 4,
+            "standardError": 0.0011209159683044936
+          },
+          {
+            "probability": 0.07488,
+            "rank": 5,
+            "standardError": 0.0011770555263028164
+          },
+          {
+            "probability": 0.08564,
+            "rank": 6,
+            "standardError": 0.00125144548742644
+          },
+          {
+            "probability": 0.09784,
+            "rank": 7,
+            "standardError": 0.001328663496902056
+          },
+          {
+            "probability": 0.11502,
+            "rank": 8,
+            "standardError": 0.0014268174347126545
+          },
+          {
+            "probability": 0.1305,
+            "rank": 9,
+            "standardError": 0.0015064511276506782
+          },
+          {
+            "probability": 0.131,
+            "rank": 10,
+            "standardError": 0.001508900261780082
+          },
+          {
+            "probability": 0.09582,
+            "rank": 11,
+            "standardError": 0.0013163474283030298
+          },
+          {
+            "probability": 0.02746,
+            "rank": 12,
+            "standardError": 0.0007308344326863644
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.05558,
+            "standardError": 0.0010246059105822102
+          },
+          {
+            "k": 2,
+            "probability": 0.11278,
+            "standardError": 0.0014146425103184197
+          },
+          {
+            "k": 3,
+            "probability": 0.17448,
+            "standardError": 0.0016972726922919604
+          },
+          {
+            "k": 4,
+            "probability": 0.24184,
+            "standardError": 0.0019149590825915837
+          },
+          {
+            "k": 5,
+            "probability": 0.31672,
+            "standardError": 0.0020804251565485357
+          },
+          {
+            "k": 6,
+            "probability": 0.40236,
+            "standardError": 0.002193018150403685
+          },
+          {
+            "k": 7,
+            "probability": 0.5002,
+            "standardError": 0.0022360677986143444
+          },
+          {
+            "k": 8,
+            "probability": 0.61522,
+            "standardError": 0.002175887642319796
+          },
+          {
+            "k": 9,
+            "probability": 0.74572,
+            "standardError": 0.001947417169483724
+          },
+          {
+            "k": 10,
+            "probability": 0.87672,
+            "standardError": 0.0014702519620799692
+          },
+          {
+            "k": 11,
+            "probability": 0.97254,
+            "standardError": 0.0007308344326863648
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 5.87526,
+        "point": "p6",
+        "rankDistribution": [
+          {
+            "probability": 0.06906,
+            "rank": 1,
+            "standardError": 0.001133937532671002
+          },
+          {
+            "probability": 0.08232,
+            "rank": 2,
+            "standardError": 0.0012291738493801438
+          },
+          {
+            "probability": 0.09152,
+            "rank": 3,
+            "standardError": 0.001289527739911011
+          },
+          {
+            "probability": 0.10104,
+            "rank": 4,
+            "standardError": 0.0013478198573993485
+          },
+          {
+            "probability": 0.10664,
+            "rank": 5,
+            "standardError": 0.0013803471331516575
+          },
+          {
+            "probability": 0.11326,
+            "rank": 6,
+            "standardError": 0.0014172661881241646
+          },
+          {
+            "probability": 0.11276,
+            "rank": 7,
+            "standardError": 0.0014145330141074827
+          },
+          {
+            "probability": 0.11052,
+            "rank": 8,
+            "standardError": 0.0014021792296279388
+          },
+          {
+            "probability": 0.10026,
+            "rank": 9,
+            "standardError": 0.0013431897289660907
+          },
+          {
+            "probability": 0.07126,
+            "rank": 10,
+            "standardError": 0.0011504956531860518
+          },
+          {
+            "probability": 0.03466,
+            "rank": 11,
+            "standardError": 0.0008180303710743263
+          },
+          {
+            "probability": 0.0067,
+            "rank": 12,
+            "standardError": 0.00036483174204008067
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.06906,
+            "standardError": 0.001133937532671002
+          },
+          {
+            "k": 2,
+            "probability": 0.15138,
+            "standardError": 0.0016028979730475673
+          },
+          {
+            "k": 3,
+            "probability": 0.2429,
+            "standardError": 0.001917809114588832
+          },
+          {
+            "k": 4,
+            "probability": 0.34394,
+            "standardError": 0.0021243600278672164
+          },
+          {
+            "k": 5,
+            "probability": 0.45058,
+            "standardError": 0.002225118709642252
+          },
+          {
+            "k": 6,
+            "probability": 0.56384,
+            "standardError": 0.00221776668926197
+          },
+          {
+            "k": 7,
+            "probability": 0.6766,
+            "standardError": 0.0020919485653332873
+          },
+          {
+            "k": 8,
+            "probability": 0.78712,
+            "standardError": 0.0018306398094655322
+          },
+          {
+            "k": 9,
+            "probability": 0.88738,
+            "standardError": 0.0014137661447354017
+          },
+          {
+            "k": 10,
+            "probability": 0.95864,
+            "standardError": 0.0008904981796724792
+          },
+          {
+            "k": 11,
+            "probability": 0.9933,
+            "standardError": 0.00036483174204008176
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 4.73752,
+        "point": "p7",
+        "rankDistribution": [
+          {
+            "probability": 0.09014,
+            "rank": 1,
+            "standardError": 0.001280740257819672
+          },
+          {
+            "probability": 0.12758,
+            "rank": 2,
+            "standardError": 0.0014920009624661776
+          },
+          {
+            "probability": 0.13628,
+            "rank": 3,
+            "standardError": 0.0015343256603472422
+          },
+          {
+            "probability": 0.14074,
+            "rank": 4,
+            "standardError": 0.0015551993595677694
+          },
+          {
+            "probability": 0.13286,
+            "rank": 5,
+            "standardError": 0.0015179474325548957
+          },
+          {
+            "probability": 0.1226,
+            "rank": 6,
+            "standardError": 0.0014667599667293895
+          },
+          {
+            "probability": 0.09594,
+            "rank": 7,
+            "standardError": 0.0013170840246544636
+          },
+          {
+            "probability": 0.07518,
+            "rank": 8,
+            "standardError": 0.001179219806482235
+          },
+          {
+            "probability": 0.04788,
+            "rank": 9,
+            "standardError": 0.000954856068734969
+          },
+          {
+            "probability": 0.023,
+            "rank": 10,
+            "standardError": 0.000670387947385691
+          },
+          {
+            "probability": 0.00702,
+            "rank": 11,
+            "standardError": 0.0003733823670180476
+          },
+          {
+            "probability": 0.00078,
+            "rank": 12,
+            "standardError": 0.00012485123948123222
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.09014,
+            "standardError": 0.001280740257819672
+          },
+          {
+            "k": 2,
+            "probability": 0.21772,
+            "standardError": 0.0018456326915180063
+          },
+          {
+            "k": 3,
+            "probability": 0.354,
+            "standardError": 0.0021386163751360363
+          },
+          {
+            "k": 4,
+            "probability": 0.49474,
+            "standardError": 0.002235944240807449
+          },
+          {
+            "k": 5,
+            "probability": 0.6276,
+            "standardError": 0.0021620279369147844
+          },
+          {
+            "k": 6,
+            "probability": 0.7502,
+            "standardError": 0.0019359749998385826
+          },
+          {
+            "k": 7,
+            "probability": 0.84614,
+            "standardError": 0.0016136114798798377
+          },
+          {
+            "k": 8,
+            "probability": 0.92132,
+            "standardError": 0.0012040719048296076
+          },
+          {
+            "k": 9,
+            "probability": 0.9692,
+            "standardError": 0.0007726753522663972
+          },
+          {
+            "k": 10,
+            "probability": 0.9922,
+            "standardError": 0.00039342496107898464
+          },
+          {
+            "k": 11,
+            "probability": 0.99922,
+            "standardError": 0.00012485123948123247
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 5.206759999999999,
+        "point": "p8",
+        "rankDistribution": [
+          {
+            "probability": 0.17256,
+            "rank": 1,
+            "standardError": 0.0016898700920484982
+          },
+          {
+            "probability": 0.11022,
+            "rank": 2,
+            "standardError": 0.0014005109896034376
+          },
+          {
+            "probability": 0.09316,
+            "rank": 3,
+            "standardError": 0.0012998554873523442
+          },
+          {
+            "probability": 0.08692,
+            "rank": 4,
+            "standardError": 0.001259880260977209
+          },
+          {
+            "probability": 0.08356,
+            "rank": 5,
+            "standardError": 0.0012375599088529008
+          },
+          {
+            "probability": 0.0823,
+            "rank": 6,
+            "standardError": 0.0012290379164208076
+          },
+          {
+            "probability": 0.08422,
+            "rank": 7,
+            "standardError": 0.0012419902704932917
+          },
+          {
+            "probability": 0.08436,
+            "rank": 8,
+            "standardError": 0.0012429271129072693
+          },
+          {
+            "probability": 0.08126,
+            "rank": 9,
+            "standardError": 0.0012219395435126895
+          },
+          {
+            "probability": 0.06796,
+            "rank": 10,
+            "standardError": 0.0011255348808455472
+          },
+          {
+            "probability": 0.04212,
+            "rank": 11,
+            "standardError": 0.0008982862082877594
+          },
+          {
+            "probability": 0.01136,
+            "rank": 12,
+            "standardError": 0.00047393987804361854
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.17256,
+            "standardError": 0.0016898700920484982
+          },
+          {
+            "k": 2,
+            "probability": 0.28278,
+            "standardError": 0.002014028160677005
+          },
+          {
+            "k": 3,
+            "probability": 0.37594,
+            "standardError": 0.0021661445768923183
+          },
+          {
+            "k": 4,
+            "probability": 0.46286,
+            "standardError": 0.002229890671759492
+          },
+          {
+            "k": 5,
+            "probability": 0.54642,
+            "standardError": 0.0022264104904531866
+          },
+          {
+            "k": 6,
+            "probability": 0.62872,
+            "standardError": 0.0021606997088906175
+          },
+          {
+            "k": 7,
+            "probability": 0.71294,
+            "standardError": 0.0020231488150899823
+          },
+          {
+            "k": 8,
+            "probability": 0.7973,
+            "standardError": 0.0017978471013965565
+          },
+          {
+            "k": 9,
+            "probability": 0.87856,
+            "standardError": 0.0014607691563008852
+          },
+          {
+            "k": 10,
+            "probability": 0.94652,
+            "standardError": 0.0010061798010296168
+          },
+          {
+            "k": 11,
+            "probability": 0.98864,
+            "standardError": 0.0004739398780436193
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 4.836379999999999,
+        "point": "p9",
+        "rankDistribution": [
+          {
+            "probability": 0.16188,
+            "rank": 1,
+            "standardError": 0.0016472696536997213
+          },
+          {
+            "probability": 0.12652,
+            "rank": 2,
+            "standardError": 0.0014866922317682298
+          },
+          {
+            "probability": 0.11174,
+            "rank": 3,
+            "standardError": 0.0014089298946363513
+          },
+          {
+            "probability": 0.10254,
+            "rank": 4,
+            "standardError": 0.0013566543288546277
+          },
+          {
+            "probability": 0.09494,
+            "rank": 5,
+            "standardError": 0.0013109263625391014
+          },
+          {
+            "probability": 0.09084,
+            "rank": 6,
+            "standardError": 0.0012852088888581498
+          },
+          {
+            "probability": 0.08868,
+            "rank": 7,
+            "standardError": 0.0012713446236170584
+          },
+          {
+            "probability": 0.07954,
+            "rank": 8,
+            "standardError": 0.001210069323633981
+          },
+          {
+            "probability": 0.06766,
+            "rank": 9,
+            "standardError": 0.0011232286000632285
+          },
+          {
+            "probability": 0.04676,
+            "rank": 10,
+            "standardError": 0.0009441769156254562
+          },
+          {
+            "probability": 0.02408,
+            "rank": 11,
+            "standardError": 0.0006855677005227129
+          },
+          {
+            "probability": 0.00482,
+            "rank": 12,
+            "standardError": 0.00030973432486568225
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.16188,
+            "standardError": 0.0016472696536997213
+          },
+          {
+            "k": 2,
+            "probability": 0.2884,
+            "standardError": 0.0020259587360062395
+          },
+          {
+            "k": 3,
+            "probability": 0.40014,
+            "standardError": 0.0021910179387672757
+          },
+          {
+            "k": 4,
+            "probability": 0.50268,
+            "standardError": 0.0022360358565997997
+          },
+          {
+            "k": 5,
+            "probability": 0.59762,
+            "standardError": 0.002193035957753543
+          },
+          {
+            "k": 6,
+            "probability": 0.68846,
+            "standardError": 0.002071148610795469
+          },
+          {
+            "k": 7,
+            "probability": 0.77714,
+            "standardError": 0.0018611470678052283
+          },
+          {
+            "k": 8,
+            "probability": 0.85668,
+            "standardError": 0.0015670314457597843
+          },
+          {
+            "k": 9,
+            "probability": 0.92434,
+            "standardError": 0.0011826712510245605
+          },
+          {
+            "k": 10,
+            "probability": 0.9711,
+            "standardError": 0.0007491967698809176
+          },
+          {
+            "k": 11,
+            "probability": 0.99518,
+            "standardError": 0.00030973432486568376
+          },
+          {
+            "k": 12,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      }
+    ],
+    "seed": 20261116,
+    "unavailable": []
+  },
+  "run": {
+    "asOf": 10,
+    "credibleLevel": 0.9,
+    "draws": 50000,
+    "generatedAt": "2026-11-16T02:30:27.176Z",
+    "inputFingerprint": "b61aa5cbfe191db0e23849c57df93f3bcc8052a0dcab9a2d9c4b7747115eed78",
+    "poolBy": [
+      "region",
+      "service"
+    ],
+    "seed": 20261116,
+    "threshold": 0.8,
+    "trainThrough": 6
+  },
+  "schema": "small-area-review/v1",
+  "standardization": {
+    "crudePooled": {
+      "attempts": 204,
+      "success": 156
+    },
+    "crudePooledRate": 0.7647058823529411,
+    "layers": [
+      {
+        "alpha": 35.896032831737344,
+        "analysisAttempts": 42,
+        "analysisSuccess": 30,
+        "beta": 14.358413132694935,
+        "layerKey": "north/card",
+        "mean": 0.7142857142857143,
+        "variance": 0.003981735219510176,
+        "weight": 0.25
+      },
+      {
+        "alpha": 68.13199426111908,
+        "analysisAttempts": 54,
+        "analysisSuccess": 42,
+        "beta": 19.466284074605454,
+        "layerKey": "north/language",
+        "mean": 0.7777777777777778,
+        "variance": 0.0019508224021904871,
+        "weight": 0.25
+      },
+      {
+        "alpha": 49.04347826086956,
+        "analysisAttempts": 48,
+        "analysisSuccess": 36,
+        "beta": 16.347826086956523,
+        "layerKey": "south/card",
+        "mean": 0.7499999999999999,
+        "variance": 0.002824165029469547,
+        "weight": 0.25
+      },
+      {
+        "alpha": 99.36842105263159,
+        "analysisAttempts": 60,
+        "analysisSuccess": 48,
+        "beta": 24.84210526315789,
+        "layerKey": "south/language",
+        "mean": 0.8,
+        "variance": 0.0012778478352248842,
+        "weight": 0.25
+      }
+    ],
+    "missingLayers": [],
+    "note": "标准化率使用与交易量无关的固定层权重混合层后验；总体粗率按实际尝试次数加权，两者结构不同，不应互相替代",
+    "standardizedRate": {
+      "credible": {
+        "level": 0.9,
+        "lower": 0.7184685867704428,
+        "upper": 0.800774382580106
+      },
+      "draws": 50000,
+      "mean": 0.760515873015873,
+      "seed": 20261117,
+      "stdDev": 0.040661478769248395,
+      "variance": 0.0016533558557020379
+    },
+    "status": "estimated",
+    "volumeWeights": {
+      "north/card": 0.20588235294117646,
+      "north/language": 0.2647058823529412,
+      "south/card": 0.23529411764705882,
+      "south/language": 0.29411764705882354
+    },
+    "weights": {
+      "north/card": 0.25,
+      "north/language": 0.25,
+      "south/card": 0.25,
+      "south/language": 0.25
+    }
+  }
+}

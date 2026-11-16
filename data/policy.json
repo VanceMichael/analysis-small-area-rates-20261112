@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "trainThrough": 6,
   "asOf": 10,
   "threshold": 0.8,
@@ -9,5 +10,13 @@
   "standardWeights": {
     "north": 0.5,
     "south": 0.5
+  },
+  "credibleLevel": 0.9,
+  "draws": 50000,
+  "seed": 20261116,
+  "review": {
+    "watchProbability": 0.5,
+    "actionProbability": 0.8,
+    "concentrationCap": 10000
   }
 }

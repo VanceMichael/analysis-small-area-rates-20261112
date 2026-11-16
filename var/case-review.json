@@ -1,0 +1,1014 @@
+{
+  "canonicalFingerprint": "47d54f23f95fedb5d35b4300eb5ca0fdfc64a09e959751619773ae8846ceb45e",
+  "checks": {
+    "conjugate": {
+      "allPass": true,
+      "failures": 0,
+      "total": 6
+    },
+    "resetPoints": [
+      {
+        "point": "A",
+        "resetPeriods": [
+          4
+        ]
+      }
+    ],
+    "unavailablePriorPoints": [
+      "D"
+    ]
+  },
+  "layerPriors": [
+    {
+      "alpha": 1.5785241248817405,
+      "beta": 0.5113528855250709,
+      "binomialReferenceVariance": 0.18481213218650971,
+      "concentration": 2.0898770104068114,
+      "contributingPointCount": 2,
+      "contributingPoints": [
+        "A",
+        "B"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [],
+      "intraClassCorrelation": 0.3236374770361299,
+      "layerKey": "north/card",
+      "logMarginalBetaBinomial": -6.133951417349144,
+      "logMarginalBinomial": -22.563847394580634,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 15.887323943661972,
+      "pooledRateAdjusted": 0.7553191489361702,
+      "pooledRateRaw": 0.7553191489361702,
+      "status": "estimated",
+      "trainingAttempts": 94,
+      "trainingSuccess": 71,
+      "weightedRateVariance": 0.06247170665459484
+    },
+    {
+      "alpha": 5000,
+      "beta": 5000,
+      "binomialReferenceVariance": 0.25,
+      "concentration": 10000,
+      "contributingPointCount": 1,
+      "contributingPoints": [
+        "E"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [
+        "singlePointConcentrationUnidentified",
+        "concentrationAtMax"
+      ],
+      "intraClassCorrelation": 0.00009999000099990002,
+      "layerKey": "north/language",
+      "logMarginalBetaBinomial": -2.2801212900894825,
+      "logMarginalBinomial": -2.277130105159074,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 1.0058994100589942,
+      "pooledRateAdjusted": 0.5,
+      "pooledRateRaw": 0.5,
+      "status": "estimated",
+      "trainingAttempts": 60,
+      "trainingSuccess": 30,
+      "weightedRateVariance": 0
+    },
+    {
+      "alpha": 4166.666666666667,
+      "beta": 5833.333333333333,
+      "binomialReferenceVariance": 0.24305555555555552,
+      "concentration": 10000,
+      "contributingPointCount": 1,
+      "contributingPoints": [
+        "C"
+      ],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [
+        "singlePointConcentrationUnidentified",
+        "concentrationAtMax"
+      ],
+      "intraClassCorrelation": 0.00009999000099990002,
+      "layerKey": "south/card",
+      "logMarginalBetaBinomial": -2.155107097335531,
+      "logMarginalBinomial": -2.1527127149668974,
+      "method": "beta-binomial-method-of-moments",
+      "overdispersionFactor": 1.0046995300469952,
+      "pooledRateAdjusted": 0.4166666666666667,
+      "pooledRateRaw": 0.4166666666666667,
+      "status": "estimated",
+      "trainingAttempts": 48,
+      "trainingSuccess": 20,
+      "weightedRateVariance": 0
+    },
+    {
+      "contributingPointCount": 0,
+      "contributingPoints": [],
+      "estimationTarget": "层内各点成功率共同 Beta 先验 Beta(alpha,beta)，仅使用训练期增量计数",
+      "flags": [
+        "noTrainingData"
+      ],
+      "layerKey": "south/language",
+      "method": "beta-binomial-method-of-moments",
+      "reason": "层内训练期没有任何尝试次数，超参数不可估计；不使用全局先验替代",
+      "status": "unavailable",
+      "trainingAttempts": 0,
+      "trainingSuccess": 0
+    }
+  ],
+  "ledgerAudit": {
+    "droppedAsFuture": [
+      "e0009"
+    ],
+    "inputRecords": 44,
+    "resetCount": 1,
+    "resets": [
+      {
+        "id": "e0004",
+        "period": 4,
+        "point": "A",
+        "priorCumulativeAttempts": 28,
+        "priorCumulativeSuccess": 14
+      }
+    ],
+    "superseded": [
+      {
+        "keptId": "e0002",
+        "period": 2,
+        "point": "A",
+        "replacedId": "e0001"
+      }
+    ]
+  },
+  "points": [
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 12,
+        "success": 6
+      },
+      "conjugateCheck": {
+        "addedFailures": 6,
+        "addedSuccess": 6,
+        "handAlpha": 7.57852412488174,
+        "handBeta": 6.511352885525071,
+        "posteriorAlpha": 7.57852412488174,
+        "posteriorBeta": 6.511352885525071,
+        "priorAlpha": 1.5785241248817405,
+        "priorBeta": 0.5113528855250709,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/card",
+      "point": "A",
+      "posterior": {
+        "alpha": 7.57852412488174,
+        "beta": 6.511352885525071,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.3230400574294463,
+          "upper": 0.7463709779112553
+        },
+        "mean": 0.5378701403343853,
+        "status": "estimated",
+        "stdDev": 0.12834468336019159,
+        "variance": 0.01647235774682784
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.015381802094961317,
+      "probabilityBelowThreshold": 0.9846181979050387,
+      "rawRate": 0.5,
+      "region": "north",
+      "resetPeriods": [
+        4
+      ],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.5,
+      "trainingWindow": {
+        "attempts": 46,
+        "success": 23
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 12,
+        "success": 8
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 8,
+        "handAlpha": 9.57852412488174,
+        "handBeta": 4.511352885525071,
+        "posteriorAlpha": 9.57852412488174,
+        "posteriorBeta": 4.511352885525071,
+        "priorAlpha": 1.5785241248817405,
+        "priorBeta": 0.5113528855250709,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/card",
+      "point": "B",
+      "posterior": {
+        "alpha": 9.57852412488174,
+        "beta": 4.511352885525071,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.4676794015942444,
+          "upper": 0.8619874395229455
+        },
+        "mean": 0.6798160209494394,
+        "status": "estimated",
+        "stdDev": 0.12010266557318915,
+        "variance": 0.014424650277785313
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0.16520940039224197,
+      "probabilityBelowThreshold": 0.834790599607758,
+      "rawRate": 0.6666666666666666,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 1,
+      "trainingWindow": {
+        "attempts": 48,
+        "success": 48
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 8,
+        "success": 4
+      },
+      "conjugateCheck": {
+        "addedFailures": 4,
+        "addedSuccess": 4,
+        "handAlpha": 4170.666666666667,
+        "handBeta": 5837.333333333333,
+        "posteriorAlpha": 4170.666666666667,
+        "posteriorBeta": 5837.333333333333,
+        "priorAlpha": 4166.666666666667,
+        "priorBeta": 5833.333333333333,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "south/card",
+      "point": "C",
+      "posterior": {
+        "alpha": 4170.666666666667,
+        "beta": 5837.333333333333,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.40863691599593144,
+          "upper": 0.42484856529709936
+        },
+        "mean": 0.4167332800426326,
+        "status": "estimated",
+        "stdDev": 0.004927961952638043,
+        "variance": 0.00002428480900664815
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0,
+      "probabilityBelowThreshold": 1,
+      "rawRate": 0.5,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.4166666666666667,
+      "trainingWindow": {
+        "attempts": 48,
+        "success": 20
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 2,
+        "success": 2
+      },
+      "conjugateCheck": {
+        "reason": "层内训练期没有任何尝试次数，超参数不可估计；不使用全局先验替代",
+        "status": "skipped"
+      },
+      "decision": "data-gap",
+      "decisionReason": "层先验不可用，仅保留原始率与台账证据",
+      "layerKey": "south/language",
+      "point": "D",
+      "posterior": {
+        "credible": null,
+        "reason": "层内训练期没有任何尝试次数，超参数不可估计；不使用全局先验替代",
+        "status": "unavailable"
+      },
+      "priorStatus": "unavailable",
+      "probabilityAtLeastThreshold": null,
+      "probabilityBelowThreshold": null,
+      "rawRate": 1,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": null,
+      "trainingWindow": {
+        "attempts": 0,
+        "success": 0
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 20,
+        "success": 10
+      },
+      "conjugateCheck": {
+        "addedFailures": 10,
+        "addedSuccess": 10,
+        "handAlpha": 5010,
+        "handBeta": 5010,
+        "posteriorAlpha": 5010,
+        "posteriorBeta": 5010,
+        "priorAlpha": 5000,
+        "priorBeta": 5000,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "north/language",
+      "point": "E",
+      "posterior": {
+        "alpha": 5010,
+        "beta": 5010,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.49178429345159524,
+          "upper": 0.5082157065484038
+        },
+        "mean": 0.5,
+        "status": "estimated",
+        "stdDev": 0.0049947582543062264,
+        "variance": 0.000024947610018960184
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0,
+      "probabilityBelowThreshold": 1,
+      "rawRate": 0.5,
+      "region": "north",
+      "resetPeriods": [],
+      "service": "language",
+      "threshold": 0.8,
+      "trainingPeriods": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "trainingRawRate": 0.5,
+      "trainingWindow": {
+        "attempts": 60,
+        "success": 30
+      }
+    },
+    {
+      "analysisPeriods": [
+        7,
+        8
+      ],
+      "analysisWindow": {
+        "attempts": 2,
+        "success": 2
+      },
+      "conjugateCheck": {
+        "addedFailures": 0,
+        "addedSuccess": 2,
+        "handAlpha": 4168.666666666667,
+        "handBeta": 5833.333333333333,
+        "posteriorAlpha": 4168.666666666667,
+        "posteriorBeta": 5833.333333333333,
+        "priorAlpha": 4166.666666666667,
+        "priorBeta": 5833.333333333333,
+        "status": "pass"
+      },
+      "decision": "adjust-resource",
+      "decisionReason": "低于阈值的后验概率 >= 0.8",
+      "layerKey": "south/card",
+      "point": "N",
+      "posterior": {
+        "alpha": 4168.666666666667,
+        "beta": 5833.333333333333,
+        "credible": {
+          "level": 0.9,
+          "lower": 0.40868437632793625,
+          "upper": 0.4249011648647991
+        },
+        "mean": 0.4167833100046658,
+        "status": "estimated",
+        "stdDev": 0.004929524134048397,
+        "variance": 0.000024300208188165594
+      },
+      "priorStatus": "estimated",
+      "probabilityAtLeastThreshold": 0,
+      "probabilityBelowThreshold": 1,
+      "rawRate": 1,
+      "region": "south",
+      "resetPeriods": [],
+      "service": "card",
+      "threshold": 0.8,
+      "trainingPeriods": [],
+      "trainingRawRate": null,
+      "trainingWindow": {
+        "attempts": 0,
+        "success": 0
+      }
+    }
+  ],
+  "ranking": {
+    "draws": 20000,
+    "pairwise": [
+      {
+        "beats": [
+          {
+            "point": "A",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "B",
+            "probability": 0.2066,
+            "standardError": 0.0028628346092640423
+          },
+          {
+            "point": "C",
+            "probability": 0.8123,
+            "standardError": 0.0027610569534147608
+          },
+          {
+            "point": "E",
+            "probability": 0.60795,
+            "standardError": 0.003452150036571412
+          },
+          {
+            "point": "N",
+            "probability": 0.8127,
+            "standardError": 0.0027587923988586023
+          }
+        ],
+        "point": "A"
+      },
+      {
+        "beats": [
+          {
+            "point": "A",
+            "probability": 0.7934,
+            "standardError": 0.0028628346092640423
+          },
+          {
+            "point": "B",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "C",
+            "probability": 0.97785,
+            "standardError": 0.0010406579048851741
+          },
+          {
+            "point": "E",
+            "probability": 0.9163,
+            "standardError": 0.001958242962453842
+          },
+          {
+            "point": "N",
+            "probability": 0.9784,
+            "standardError": 0.0010279455238484177
+          }
+        ],
+        "point": "B"
+      },
+      {
+        "beats": [
+          {
+            "point": "A",
+            "probability": 0.1877,
+            "standardError": 0.0027610569534147608
+          },
+          {
+            "point": "B",
+            "probability": 0.02215,
+            "standardError": 0.0010406579048851741
+          },
+          {
+            "point": "C",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "E",
+            "probability": 0,
+            "standardError": 0
+          },
+          {
+            "point": "N",
+            "probability": 0.49615,
+            "standardError": 0.0035354290934764905
+          }
+        ],
+        "point": "C"
+      },
+      {
+        "beats": [
+          {
+            "point": "A",
+            "probability": 0.39205,
+            "standardError": 0.003452150036571412
+          },
+          {
+            "point": "B",
+            "probability": 0.0837,
+            "standardError": 0.001958242962453842
+          },
+          {
+            "point": "C",
+            "probability": 1,
+            "standardError": 0
+          },
+          {
+            "point": "E",
+            "probability": null,
+            "standardError": null
+          },
+          {
+            "point": "N",
+            "probability": 1,
+            "standardError": 0
+          }
+        ],
+        "point": "E"
+      },
+      {
+        "beats": [
+          {
+            "point": "A",
+            "probability": 0.1873,
+            "standardError": 0.002758792398858602
+          },
+          {
+            "point": "B",
+            "probability": 0.0216,
+            "standardError": 0.0010279455238484188
+          },
+          {
+            "point": "C",
+            "probability": 0.50385,
+            "standardError": 0.0035354290934764905
+          },
+          {
+            "point": "E",
+            "probability": 0,
+            "standardError": 0
+          },
+          {
+            "point": "N",
+            "probability": null,
+            "standardError": null
+          }
+        ],
+        "point": "N"
+      }
+    ],
+    "rankings": [
+      {
+        "expectedRank": 2.5604500000000003,
+        "point": "A",
+        "rankDistribution": [
+          {
+            "probability": 0.1937,
+            "rank": 1,
+            "standardError": 0.002794461576046448
+          },
+          {
+            "probability": 0.4254,
+            "rank": 2,
+            "standardError": 0.003495960812137344
+          },
+          {
+            "probability": 0.18835,
+            "rank": 3,
+            "standardError": 0.0027647267270021463
+          },
+          {
+            "probability": 0.01185,
+            "rank": 4,
+            "standardError": 0.0007651659133808824
+          },
+          {
+            "probability": 0.1807,
+            "rank": 5,
+            "standardError": 0.0027207306922957296
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.1937,
+            "standardError": 0.002794461576046448
+          },
+          {
+            "k": 2,
+            "probability": 0.6191,
+            "standardError": 0.0034337675372686487
+          },
+          {
+            "k": 3,
+            "probability": 0.80745,
+            "standardError": 0.0027881400386279022
+          },
+          {
+            "k": 4,
+            "probability": 0.8193,
+            "standardError": 0.0027207306922957296
+          },
+          {
+            "k": 5,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 1.33405,
+        "point": "B",
+        "rankDistribution": [
+          {
+            "probability": 0.7719,
+            "rank": 1,
+            "standardError": 0.0029670725471413737
+          },
+          {
+            "probability": 0.1635,
+            "rank": 2,
+            "standardError": 0.0026150310705611132
+          },
+          {
+            "probability": 0.0421,
+            "rank": 3,
+            "standardError": 0.001419992781671794
+          },
+          {
+            "probability": 0.00365,
+            "rank": 4,
+            "standardError": 0.0004264198342009902
+          },
+          {
+            "probability": 0.01885,
+            "rank": 5,
+            "standardError": 0.0009616308413315371
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.7719,
+            "standardError": 0.0029670725471413737
+          },
+          {
+            "k": 2,
+            "probability": 0.9354,
+            "standardError": 0.0017382007939245683
+          },
+          {
+            "k": 3,
+            "probability": 0.9775,
+            "standardError": 0.0010486598590582165
+          },
+          {
+            "k": 4,
+            "probability": 0.98115,
+            "standardError": 0.000961630841331538
+          },
+          {
+            "k": 5,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 4.294,
+        "point": "C",
+        "rankDistribution": [
+          {
+            "probability": 0,
+            "rank": 1,
+            "standardError": 0
+          },
+          {
+            "probability": 0.0018,
+            "rank": 2,
+            "standardError": 0.0002997298783905268
+          },
+          {
+            "probability": 0.105,
+            "rank": 3,
+            "standardError": 0.002167660028694537
+          },
+          {
+            "probability": 0.4906,
+            "rank": 4,
+            "standardError": 0.0035349090511638346
+          },
+          {
+            "probability": 0.4026,
+            "rank": 5,
+            "standardError": 0.0034678036276582906
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0,
+            "standardError": 0
+          },
+          {
+            "k": 2,
+            "probability": 0.0018,
+            "standardError": 0.0002997298783905268
+          },
+          {
+            "k": 3,
+            "probability": 0.1068,
+            "standardError": 0.0021839615381228673
+          },
+          {
+            "k": 4,
+            "probability": 0.5974,
+            "standardError": 0.0034678036276582906
+          },
+          {
+            "k": 5,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 2.52425,
+        "point": "E",
+        "rankDistribution": [
+          {
+            "probability": 0.0344,
+            "rank": 1,
+            "standardError": 0.0012887327108442618
+          },
+          {
+            "probability": 0.40695,
+            "rank": 2,
+            "standardError": 0.0034737709877019816
+          },
+          {
+            "probability": 0.55865,
+            "rank": 3,
+            "standardError": 0.003511126439620197
+          },
+          {
+            "probability": 0,
+            "rank": 4,
+            "standardError": 0
+          },
+          {
+            "probability": 0,
+            "rank": 5,
+            "standardError": 0
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0.0344,
+            "standardError": 0.0012887327108442618
+          },
+          {
+            "k": 2,
+            "probability": 0.44135,
+            "standardError": 0.003511126439620197
+          },
+          {
+            "k": 3,
+            "probability": 1,
+            "standardError": 0
+          },
+          {
+            "k": 4,
+            "probability": 1,
+            "standardError": 0
+          },
+          {
+            "k": 5,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      },
+      {
+        "expectedRank": 4.28725,
+        "point": "N",
+        "rankDistribution": [
+          {
+            "probability": 0,
+            "rank": 1,
+            "standardError": 0
+          },
+          {
+            "probability": 0.00235,
+            "rank": 2,
+            "standardError": 0.00034237972340662933
+          },
+          {
+            "probability": 0.1059,
+            "rank": 3,
+            "standardError": 0.0021758353568227537
+          },
+          {
+            "probability": 0.4939,
+            "rank": 4,
+            "standardError": 0.003535270781708241
+          },
+          {
+            "probability": 0.39785,
+            "rank": 5,
+            "standardError": 0.0034609635760868675
+          }
+        ],
+        "topK": [
+          {
+            "k": 1,
+            "probability": 0,
+            "standardError": 0
+          },
+          {
+            "k": 2,
+            "probability": 0.00235,
+            "standardError": 0.00034237972340662933
+          },
+          {
+            "k": 3,
+            "probability": 0.10825,
+            "standardError": 0.0021969517234113273
+          },
+          {
+            "k": 4,
+            "probability": 0.60215,
+            "standardError": 0.003460963576086868
+          },
+          {
+            "k": 5,
+            "probability": 1,
+            "standardError": 0
+          }
+        ]
+      }
+    ],
+    "seed": 4242,
+    "unavailable": [
+      {
+        "point": "D",
+        "reason": "层内训练期没有任何尝试次数，超参数不可估计；不使用全局先验替代"
+      }
+    ]
+  },
+  "run": {
+    "asOf": 10,
+    "credibleLevel": 0.9,
+    "draws": 20000,
+    "generatedAt": "2026-11-16T02:27:59.250Z",
+    "inputFingerprint": "1ef92d2601cbe816f985e2ae1f67244f178d0fb5df165e1cf7163d840bed8222",
+    "poolBy": [
+      "region",
+      "service"
+    ],
+    "seed": 4242,
+    "threshold": 0.8,
+    "trainThrough": 6
+  },
+  "schema": "small-area-review/v1",
+  "standardization": {
+    "crudePooled": {
+      "attempts": 54,
+      "success": 30
+    },
+    "crudePooledRate": 0.5555555555555556,
+    "layers": [
+      {
+        "alpha": 15.57852412488174,
+        "analysisAttempts": 24,
+        "analysisSuccess": 14,
+        "beta": 10.51135288552507,
+        "layerKey": "north/card",
+        "mean": 0.597109910432607,
+        "variance": 0.008880426633290148,
+        "weight": 0.37499999999999994
+      },
+      {
+        "alpha": 5010,
+        "analysisAttempts": 20,
+        "analysisSuccess": 10,
+        "beta": 5010,
+        "layerKey": "north/language",
+        "mean": 0.5,
+        "variance": 0.000024947610018960184,
+        "weight": 0.37499999999999994
+      },
+      {
+        "alpha": 4172.666666666667,
+        "analysisAttempts": 10,
+        "analysisSuccess": 6,
+        "beta": 5837.333333333333,
+        "layerKey": "south/card",
+        "mean": 0.41684981684981687,
+        "variance": 0.000024281894620126962,
+        "weight": 0.25
+      }
+    ],
+    "missingLayers": [
+      {
+        "layerKey": "south/language",
+        "reason": "层内训练期没有任何尝试次数，超参数不可估计；不使用全局先验替代"
+      }
+    ],
+    "note": "标准化率使用与交易量无关的固定层权重混合层后验；总体粗率按实际尝试次数加权，两者结构不同，不应互相替代",
+    "standardizedRate": {
+      "credible": {
+        "level": 0.9,
+        "lower": 0.45526423863018883,
+        "upper": 0.5726482166657124
+      },
+      "draws": 20000,
+      "mean": 0.5156286706246818,
+      "seed": 4243,
+      "stdDev": 0.07921138983408518,
+      "variance": 0.006274444279447413
+    },
+    "status": "partial",
+    "volumeWeights": {
+      "north/card": 0.4444444444444444,
+      "north/language": 0.37037037037037035,
+      "south/card": 0.18518518518518517
+    },
+    "weights": {
+      "north/card": 0.37499999999999994,
+      "north/language": 0.37499999999999994,
+      "south/card": 0.25
+    }
+  }
+}

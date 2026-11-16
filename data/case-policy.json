@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "trainThrough": 6,
+  "asOf": 10,
+  "threshold": 0.8,
+  "poolBy": [
+    "region",
+    "service"
+  ],
+  "layerWeights": {
+    "north/card": 0.3,
+    "north/language": 0.3,
+    "south/card": 0.2,
+    "south/language": 0.2
+  },
+  "credibleLevel": 0.9,
+  "draws": 20000,
+  "seed": 4242,
+  "review": {
+    "watchProbability": 0.5,
+    "actionProbability": 0.8,
+    "concentrationCap": 10000
+  }
+}
